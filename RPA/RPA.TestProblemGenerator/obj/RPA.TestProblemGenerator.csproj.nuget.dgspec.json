@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\yunus.demir.BTU\\Documents\\GitHub\\Academic_RPA\\RPA\\RPA.TestProblemGenerator\\RPA.TestProblemGenerator.csproj": {}
+    "C:\\Users\\KUROPSİS\\Documents\\GitHub\\Academic_RPA\\RPA\\RPA.TestProblemGenerator\\RPA.TestProblemGenerator.csproj": {}
   },
   "projects": {
-    "C:\\Users\\yunus.demir.BTU\\Documents\\GitHub\\Academic_RPA\\RPA\\RPA.TestProblemGenerator\\RPA.TestProblemGenerator.csproj": {
+    "C:\\Users\\KUROPSİS\\Documents\\GitHub\\Academic_RPA\\RPA\\RPA.TestProblemGenerator\\RPA.TestProblemGenerator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yunus.demir.BTU\\Documents\\GitHub\\Academic_RPA\\RPA\\RPA.TestProblemGenerator\\RPA.TestProblemGenerator.csproj",
+        "projectUniqueName": "C:\\Users\\KUROPSİS\\Documents\\GitHub\\Academic_RPA\\RPA\\RPA.TestProblemGenerator\\RPA.TestProblemGenerator.csproj",
         "projectName": "RPA.TestProblemGenerator",
-        "projectPath": "C:\\Users\\yunus.demir.BTU\\Documents\\GitHub\\Academic_RPA\\RPA\\RPA.TestProblemGenerator\\RPA.TestProblemGenerator.csproj",
-        "packagesPath": "C:\\Users\\yunus.demir.BTU\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yunus.demir.BTU\\Documents\\GitHub\\Academic_RPA\\RPA\\RPA.TestProblemGenerator\\obj\\",
+        "projectPath": "C:\\Users\\KUROPSİS\\Documents\\GitHub\\Academic_RPA\\RPA\\RPA.TestProblemGenerator\\RPA.TestProblemGenerator.csproj",
+        "packagesPath": "C:\\Users\\KUROPSİS\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\KUROPSİS\\Documents\\GitHub\\Academic_RPA\\RPA\\RPA.TestProblemGenerator\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\yunus.demir.BTU\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\KUROPSİS\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -61,7 +64,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.307/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

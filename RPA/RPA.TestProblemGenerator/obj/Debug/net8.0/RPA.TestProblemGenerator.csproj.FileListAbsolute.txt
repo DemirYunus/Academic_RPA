@@ -9,3 +9,15 @@ C:\Users\yunus.demir.BTU\Documents\GitHub\Academic_RPA\RPA\RPA.TestProblemGenera
 C:\Users\yunus.demir.BTU\Documents\GitHub\Academic_RPA\RPA\RPA.TestProblemGenerator\obj\Debug\net8.0\refint\RPA.TestProblemGenerator.dll
 C:\Users\yunus.demir.BTU\Documents\GitHub\Academic_RPA\RPA\RPA.TestProblemGenerator\obj\Debug\net8.0\RPA.TestProblemGenerator.pdb
 C:\Users\yunus.demir.BTU\Documents\GitHub\Academic_RPA\RPA\RPA.TestProblemGenerator\obj\Debug\net8.0\ref\RPA.TestProblemGenerator.dll
+C:\Users\KUROPSİS\Documents\GitHub\Academic_RPA\RPA\RPA.TestProblemGenerator\bin\Debug\net8.0\RPA.TestProblemGenerator.deps.json
+C:\Users\KUROPSİS\Documents\GitHub\Academic_RPA\RPA\RPA.TestProblemGenerator\bin\Debug\net8.0\RPA.TestProblemGenerator.dll
+C:\Users\KUROPSİS\Documents\GitHub\Academic_RPA\RPA\RPA.TestProblemGenerator\bin\Debug\net8.0\RPA.TestProblemGenerator.pdb
+C:\Users\KUROPSİS\Documents\GitHub\Academic_RPA\RPA\RPA.TestProblemGenerator\obj\Debug\net8.0\RPA.TestProblemGenerator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\KUROPSİS\Documents\GitHub\Academic_RPA\RPA\RPA.TestProblemGenerator\obj\Debug\net8.0\RPA.TestProblemGenerator.AssemblyInfoInputs.cache
+C:\Users\KUROPSİS\Documents\GitHub\Academic_RPA\RPA\RPA.TestProblemGenerator\obj\Debug\net8.0\RPA.TestProblemGenerator.AssemblyInfo.cs
+C:\Users\KUROPSİS\Documents\GitHub\Academic_RPA\RPA\RPA.TestProblemGenerator\obj\Debug\net8.0\RPA.TestProblemGenerator.csproj.CoreCompileInputs.cache
+C:\Users\KUROPSİS\Documents\GitHub\Academic_RPA\RPA\RPA.TestProblemGenerator\obj\Debug\net8.0\RPA.TestProblemGenerator.sourcelink.json
+C:\Users\KUROPSİS\Documents\GitHub\Academic_RPA\RPA\RPA.TestProblemGenerator\obj\Debug\net8.0\RPA.TestProblemGenerator.dll
+C:\Users\KUROPSİS\Documents\GitHub\Academic_RPA\RPA\RPA.TestProblemGenerator\obj\Debug\net8.0\refint\RPA.TestProblemGenerator.dll
+C:\Users\KUROPSİS\Documents\GitHub\Academic_RPA\RPA\RPA.TestProblemGenerator\obj\Debug\net8.0\RPA.TestProblemGenerator.pdb
+C:\Users\KUROPSİS\Documents\GitHub\Academic_RPA\RPA\RPA.TestProblemGenerator\obj\Debug\net8.0\ref\RPA.TestProblemGenerator.dll

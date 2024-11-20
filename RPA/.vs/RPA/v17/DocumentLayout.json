@@ -1,17 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\yunus.demir.BTU\\Documents\\GitHub\\Academic_RPA\\RPA\\",
+  "WorkspaceRootPath": "C:\\Users\\KUROPS\u0130S\\Documents\\GitHub\\Academic_RPA\\RPA\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\yunus.demir.BTU\\AppData\\Local\\Temp\\.vsdbgsrc\\09dfe4699a4ac2011df7de469a1613a17702336f4415f47b9fe54a3666c967ce\\ProcessGenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2E5A747D-488F-44AB-8FD6-EAB1D6F7BE6F}|RPA.MathModel\\RPA.MathModel.csproj|c:\\users\\kurops\u0130s\\documents\\github\\academic_rpa\\rpa\\rpa.mathmodel\\ilp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E5A747D-488F-44AB-8FD6-EAB1D6F7BE6F}|RPA.MathModel\\RPA.MathModel.csproj|solutionrelative:rpa.mathmodel\\ilp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D57B65EB-E76C-4546-B94B-DF30BC69D049}|RPA.PL\\RPA.PL.csproj|c:\\users\\yunus.demir.btu\\documents\\github\\academic_rpa\\rpa\\rpa.pl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D57B65EB-E76C-4546-B94B-DF30BC69D049}|RPA.PL\\RPA.PL.csproj|solutionrelative:rpa.pl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4FCC2B04-A3EC-4012-8EF3-D1F53A90D3DA}|RPA.TestProblemGenerator\\RPA.TestProblemGenerator.csproj|c:\\users\\yunus.demir.btu\\documents\\github\\academic_rpa\\rpa\\rpa.testproblemgenerator\\processgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4FCC2B04-A3EC-4012-8EF3-D1F53A90D3DA}|RPA.TestProblemGenerator\\RPA.TestProblemGenerator.csproj|c:\\users\\kurops\u0130s\\documents\\github\\academic_rpa\\rpa\\rpa.testproblemgenerator\\processgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4FCC2B04-A3EC-4012-8EF3-D1F53A90D3DA}|RPA.TestProblemGenerator\\RPA.TestProblemGenerator.csproj|solutionrelative:rpa.testproblemgenerator\\processgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D57B65EB-E76C-4546-B94B-DF30BC69D049}|RPA.PL\\RPA.PL.csproj|c:\\users\\kurops\u0130s\\documents\\github\\academic_rpa\\rpa\\rpa.pl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D57B65EB-E76C-4546-B94B-DF30BC69D049}|RPA.PL\\RPA.PL.csproj|solutionrelative:rpa.pl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,38 +27,38 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ProcessGenerator.cs",
-              "DocumentMoniker": "C:\\Users\\yunus.demir.BTU\\AppData\\Local\\Temp\\.vsdbgsrc\\09dfe4699a4ac2011df7de469a1613a17702336f4415f47b9fe54a3666c967ce\\ProcessGenerator.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\09dfe4699a4ac2011df7de469a1613a17702336f4415f47b9fe54a3666c967ce\\ProcessGenerator.cs",
-              "ToolTip": "C:\\Users\\yunus.demir.BTU\\AppData\\Local\\Temp\\.vsdbgsrc\\09dfe4699a4ac2011df7de469a1613a17702336f4415f47b9fe54a3666c967ce\\ProcessGenerator.cs [Read Only]",
-              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\09dfe4699a4ac2011df7de469a1613a17702336f4415f47b9fe54a3666c967ce\\ProcessGenerator.cs [Read Only]",
-              "ViewState": "AQIAACwAAAAAAAAAAAAWwDkAAAADAAAA",
+              "Title": "ILP.cs",
+              "DocumentMoniker": "C:\\Users\\KUROPS\u0130S\\Documents\\GitHub\\Academic_RPA\\RPA\\RPA.MathModel\\ILP.cs",
+              "RelativeDocumentMoniker": "RPA.MathModel\\ILP.cs",
+              "ToolTip": "C:\\Users\\KUROPS\u0130S\\Documents\\GitHub\\Academic_RPA\\RPA\\RPA.MathModel\\ILP.cs",
+              "RelativeToolTip": "RPA.MathModel\\ILP.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAswEkAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T14:36:05.049Z",
-              "EditorCaption": " [Read Only]"
+              "WhenOpened": "2024-11-20T19:10:16.978Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\yunus.demir.BTU\\Documents\\GitHub\\Academic_RPA\\RPA\\RPA.PL\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\KUROPS\u0130S\\Documents\\GitHub\\Academic_RPA\\RPA\\RPA.PL\\Program.cs",
               "RelativeDocumentMoniker": "RPA.PL\\Program.cs",
-              "ToolTip": "C:\\Users\\yunus.demir.BTU\\Documents\\GitHub\\Academic_RPA\\RPA\\RPA.PL\\Program.cs",
+              "ToolTip": "C:\\Users\\KUROPS\u0130S\\Documents\\GitHub\\Academic_RPA\\RPA\\RPA.PL\\Program.cs",
               "RelativeToolTip": "RPA.PL\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAATAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-20T14:26:32.759Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "ProcessGenerator.cs",
-              "DocumentMoniker": "C:\\Users\\yunus.demir.BTU\\Documents\\GitHub\\Academic_RPA\\RPA\\RPA.TestProblemGenerator\\ProcessGenerator.cs",
+              "DocumentMoniker": "C:\\Users\\KUROPS\u0130S\\Documents\\GitHub\\Academic_RPA\\RPA\\RPA.TestProblemGenerator\\ProcessGenerator.cs",
               "RelativeDocumentMoniker": "RPA.TestProblemGenerator\\ProcessGenerator.cs",
-              "ToolTip": "C:\\Users\\yunus.demir.BTU\\Documents\\GitHub\\Academic_RPA\\RPA\\RPA.TestProblemGenerator\\ProcessGenerator.cs",
+              "ToolTip": "C:\\Users\\KUROPS\u0130S\\Documents\\GitHub\\Academic_RPA\\RPA\\RPA.TestProblemGenerator\\ProcessGenerator.cs",
               "RelativeToolTip": "RPA.TestProblemGenerator\\ProcessGenerator.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAZAAAA",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAQwBMAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-20T14:03:18.295Z",
               "EditorCaption": ""

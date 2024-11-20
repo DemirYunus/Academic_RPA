@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RPA.DAL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+656b1f4a5ec6905e70a72740d9882473e3e74549")]
 [assembly: System.Reflection.AssemblyProductAttribute("RPA.DAL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RPA.DAL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
