@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "RPA.PL/1.0.0": {
+        "dependencies": {
+          "RPA.TestProblemGenerator": "1.0.0"
+        },
+        "runtime": {
+          "RPA.PL.dll": {}
+        }
+      },
+      "RPA.TestProblemGenerator/1.0.0": {
+        "runtime": {
+          "RPA.TestProblemGenerator.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "RPA.PL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "RPA.TestProblemGenerator/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

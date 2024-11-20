@@ -1,0 +1,11 @@
+C:\Users\yunus.demir.BTU\Documents\GitHub\Academic_RPA\RPA\RPA.DAL\bin\Debug\net8.0\RPA.DAL.deps.json
+C:\Users\yunus.demir.BTU\Documents\GitHub\Academic_RPA\RPA\RPA.DAL\bin\Debug\net8.0\RPA.DAL.dll
+C:\Users\yunus.demir.BTU\Documents\GitHub\Academic_RPA\RPA\RPA.DAL\bin\Debug\net8.0\RPA.DAL.pdb
+C:\Users\yunus.demir.BTU\Documents\GitHub\Academic_RPA\RPA\RPA.DAL\obj\Debug\net8.0\RPA.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yunus.demir.BTU\Documents\GitHub\Academic_RPA\RPA\RPA.DAL\obj\Debug\net8.0\RPA.DAL.AssemblyInfoInputs.cache
+C:\Users\yunus.demir.BTU\Documents\GitHub\Academic_RPA\RPA\RPA.DAL\obj\Debug\net8.0\RPA.DAL.AssemblyInfo.cs
+C:\Users\yunus.demir.BTU\Documents\GitHub\Academic_RPA\RPA\RPA.DAL\obj\Debug\net8.0\RPA.DAL.csproj.CoreCompileInputs.cache
+C:\Users\yunus.demir.BTU\Documents\GitHub\Academic_RPA\RPA\RPA.DAL\obj\Debug\net8.0\RPA.DAL.dll
+C:\Users\yunus.demir.BTU\Documents\GitHub\Academic_RPA\RPA\RPA.DAL\obj\Debug\net8.0\refint\RPA.DAL.dll
+C:\Users\yunus.demir.BTU\Documents\GitHub\Academic_RPA\RPA\RPA.DAL\obj\Debug\net8.0\RPA.DAL.pdb
+C:\Users\yunus.demir.BTU\Documents\GitHub\Academic_RPA\RPA\RPA.DAL\obj\Debug\net8.0\ref\RPA.DAL.dll

@@ -1,0 +1,4 @@
+C:\Users\yunus.demir.BTU\Documents\GitHub\Academic_RPA\RPA\RPA.TestProblemGenerator\obj\Debug\net5.0\RPA.TestProblemGenerator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yunus.demir.BTU\Documents\GitHub\Academic_RPA\RPA\RPA.TestProblemGenerator\obj\Debug\net5.0\RPA.TestProblemGenerator.AssemblyInfoInputs.cache
+C:\Users\yunus.demir.BTU\Documents\GitHub\Academic_RPA\RPA\RPA.TestProblemGenerator\obj\Debug\net5.0\RPA.TestProblemGenerator.AssemblyInfo.cs
+C:\Users\yunus.demir.BTU\Documents\GitHub\Academic_RPA\RPA\RPA.TestProblemGenerator\obj\Debug\net5.0\RPA.TestProblemGenerator.csproj.CoreCompileInputs.cache
