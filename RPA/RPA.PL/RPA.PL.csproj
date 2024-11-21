@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\RPA.MathModel\RPA.MathModel.csproj" />
     <ProjectReference Include="..\RPA.TestProblemGenerator\RPA.TestProblemGenerator.csproj" />
   </ItemGroup>
 

@@ -89,21 +89,26 @@ namespace RPA.TestProblemGenerator
 			DataTable dtProcessInstanceTable = new DataTable();
 			dtProcessInstanceTable.Columns.Add("IDProcess", typeof(string));
 			dtProcessInstanceTable.Columns.Add("IDProcessInstance", typeof(string));
-			dtProcessInstanceTable.Columns.Add("TransactionDay", typeof(int));
-			dtProcessInstanceTable.Columns.Add("TransactionTime", typeof(string));
+			dtProcessInstanceTable.Columns.Add("ReleaseDay", typeof(int));
+			dtProcessInstanceTable.Columns.Add("ReleaseHour", typeof(int));
+			dtProcessInstanceTable.Columns.Add("ReleaseMinute", typeof(int));
+			dtProcessInstanceTable.Columns.Add("ReleaseTime", typeof(int));
 
 			int cnt = 0;
 			for (int i = 0; i < dtProcess.Rows.Count; i++) 
 			{
-				for (int j = 0; j < Convert.ToInt32(dtProcess.Rows[i][8]); j++)
+				for (int j = 0; j < Convert.ToInt32(dtProcess.Rows[i][8]); j++)//NumOfWeeklyRepet
 				{
-					for (int k = 0; k < Convert.ToInt32(dtProcess.Rows[i][16]); k++)
+					for (int k = 0; k < Convert.ToInt32(dtProcess.Rows[i][16]); k++)//NumOfDailyRepet
 					{
 						DataRow dr = dtProcessInstanceTable.NewRow();
 						dr[0] = dtProcess.Rows[i][0].ToString();
 						dr[1] = "Insance_" + i.ToString() + "_" + cnt.ToString();
-						dr[2] = Convert.ToInt32(dtProcess.Rows[i][9 + j]);
-						dr[3] = dtProcess.Rows[i][17 + k].ToString();
+						dr[2] = Convert.ToInt32(dtProcess.Rows[i][9 + j]);//TransactionDay-j
+						string[] time = dtProcess.Rows[i][17 + k].ToString().Split(".");
+						dr[3] = Convert.ToInt32(time[0]);//ReleaseHour
+						dr[4] = Convert.ToInt32(time[1]);//ReleaseMinute
+						dr[5] = (Convert.ToInt32(dtProcess.Rows[i][9 + j]) - 1) * 24 * 60 + Convert.ToInt32(time[0]) * 60 + Convert.ToInt32(time[1]);//ReleaseTime
 
 						dtProcessInstanceTable.Rows.Add(dr);
 						cnt++;

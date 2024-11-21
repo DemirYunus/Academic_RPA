@@ -1,0 +1,16 @@
+C:\Users\KUROPSİS\Documents\GitHub\Academic_RPA\RPA\RPA.MathModel\bin\Debug\net8.0\RPA.MathModel.deps.json
+C:\Users\KUROPSİS\Documents\GitHub\Academic_RPA\RPA\RPA.MathModel\bin\Debug\net8.0\RPA.MathModel.dll
+C:\Users\KUROPSİS\Documents\GitHub\Academic_RPA\RPA\RPA.MathModel\bin\Debug\net8.0\RPA.MathModel.pdb
+C:\Users\KUROPSİS\Documents\GitHub\Academic_RPA\RPA\RPA.MathModel\bin\Debug\net8.0\Gurobi120.NET.dll
+C:\Users\KUROPSİS\Documents\GitHub\Academic_RPA\RPA\RPA.MathModel\bin\Debug\net8.0\Gurobi120.NET.xml
+C:\Users\KUROPSİS\Documents\GitHub\Academic_RPA\RPA\RPA.MathModel\obj\Debug\net8.0\RPA.MathModel.csproj.AssemblyReference.cache
+C:\Users\KUROPSİS\Documents\GitHub\Academic_RPA\RPA\RPA.MathModel\obj\Debug\net8.0\RPA.MathModel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\KUROPSİS\Documents\GitHub\Academic_RPA\RPA\RPA.MathModel\obj\Debug\net8.0\RPA.MathModel.AssemblyInfoInputs.cache
+C:\Users\KUROPSİS\Documents\GitHub\Academic_RPA\RPA\RPA.MathModel\obj\Debug\net8.0\RPA.MathModel.AssemblyInfo.cs
+C:\Users\KUROPSİS\Documents\GitHub\Academic_RPA\RPA\RPA.MathModel\obj\Debug\net8.0\RPA.MathModel.csproj.CoreCompileInputs.cache
+C:\Users\KUROPSİS\Documents\GitHub\Academic_RPA\RPA\RPA.MathModel\obj\Debug\net8.0\RPA.MathModel.sourcelink.json
+C:\Users\KUROPSİS\Documents\GitHub\Academic_RPA\RPA\RPA.MathModel\obj\Debug\net8.0\RPA.Math.64D39457.Up2Date
+C:\Users\KUROPSİS\Documents\GitHub\Academic_RPA\RPA\RPA.MathModel\obj\Debug\net8.0\RPA.MathModel.dll
+C:\Users\KUROPSİS\Documents\GitHub\Academic_RPA\RPA\RPA.MathModel\obj\Debug\net8.0\refint\RPA.MathModel.dll
+C:\Users\KUROPSİS\Documents\GitHub\Academic_RPA\RPA\RPA.MathModel\obj\Debug\net8.0\RPA.MathModel.pdb
+C:\Users\KUROPSİS\Documents\GitHub\Academic_RPA\RPA\RPA.MathModel\obj\Debug\net8.0\ref\RPA.MathModel.dll

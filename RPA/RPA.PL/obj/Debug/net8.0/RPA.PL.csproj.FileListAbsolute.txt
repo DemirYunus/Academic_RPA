@@ -35,3 +35,7 @@ C:\Users\KUROPSİS\Documents\GitHub\Academic_RPA\RPA\RPA.PL\obj\Debug\net8.0\ref
 C:\Users\KUROPSİS\Documents\GitHub\Academic_RPA\RPA\RPA.PL\obj\Debug\net8.0\RPA.PL.pdb
 C:\Users\KUROPSİS\Documents\GitHub\Academic_RPA\RPA\RPA.PL\obj\Debug\net8.0\RPA.PL.genruntimeconfig.cache
 C:\Users\KUROPSİS\Documents\GitHub\Academic_RPA\RPA\RPA.PL\obj\Debug\net8.0\ref\RPA.PL.dll
+C:\Users\KUROPSİS\Documents\GitHub\Academic_RPA\RPA\RPA.PL\bin\Debug\net8.0\RPA.MathModel.dll
+C:\Users\KUROPSİS\Documents\GitHub\Academic_RPA\RPA\RPA.PL\bin\Debug\net8.0\Gurobi120.NET.dll
+C:\Users\KUROPSİS\Documents\GitHub\Academic_RPA\RPA\RPA.PL\bin\Debug\net8.0\RPA.MathModel.pdb
+C:\Users\KUROPSİS\Documents\GitHub\Academic_RPA\RPA\RPA.PL\bin\Debug\net8.0\Gurobi120.NET.xml
