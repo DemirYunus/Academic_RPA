@@ -34,11 +34,10 @@ namespace RPA.MathModel
 			model = new GRBModel(environment);
 		}
 
-		public void Solve(int numOfDepartment, int numOfAccount, double costOfRobot)
+		public void Solve(int numOfDepartment, int numOfAccount, int numOfRobot, double costOfRobot, double penaltyCost, int planningHorizon)
 		{
 			int numOfProc = dtProcess.Rows.Count;
-			int numOfProcInstance = dtProcessInstance.Rows.Count;
-			int numOfRobot = dtProcess.Rows.Count;
+			int numOfProcInstance = dtProcessInstance.Rows.Count;			
 			double M = 10000000000000;
 
 			#region Değişken Tanımlama
@@ -66,7 +65,7 @@ namespace RPA.MathModel
 
 			for (int i = 0; i < numOfProcInstance; i++)
 			{
-				T[i] = model.AddVar(0, 43200, 0, GRB.CONTINUOUS, "s(" + (i).ToString() + ")");//24*60*30
+				T[i] = model.AddVar(0, 10080, penaltyCost, GRB.CONTINUOUS, "T(" + (i).ToString() + ")");//24*60*30
 				for (int f = 0; f < numOfProcInstance; f++)
 				{
 				
@@ -76,7 +75,7 @@ namespace RPA.MathModel
 				{
 					x[i, j] = model.AddVar(0, 1, 0, GRB.BINARY, "x(" + (i).ToString() + "," + (j).ToString() + ")");
 
-					s[i, j] = model.AddVar(0, 43200, 0, GRB.CONTINUOUS, "s(" + (i).ToString() + "," + (j).ToString() + ")");//24*60*30
+					s[i, j] = model.AddVar(0, 10080, 0, GRB.CONTINUOUS, "s(" + (i).ToString() + "," + (j).ToString() + ")");//24*60*30
 				}
 
 				for (int f = 0; f < numOfProcInstance; f++)
@@ -163,16 +162,123 @@ namespace RPA.MathModel
 
 			#endregion
 
-			#region Kısıt-10: En erken başlama 
+			#region Kısıt-5: Özel bölüm özel robot 
+
+			for (int m = 0; m < numOfDepartment; m++)
+			{
+				for (int k = 0; k < numOfProc; k++)//Each
+				{
+					if (dtProcess.Rows[k][6].ToString() == m.ToString())
+					{
+						for (int g = 0; g < numOfProc; g++)//Each
+						{
+							if (dtProcess.Rows[k][6].ToString() != m.ToString())
+							{
+								for (int j = 0; j < numOfRobot; j++)//Each
+								{
+									model.AddConstr(y[k, j] + y[g, j] == 1, "k5(" + (k).ToString() + " Process)");
+								}
+							}
+						}
+					}
+				}
+			}
+
+			#endregion
+
+			#region Kısıt-7: k işlem türünün tüm işlemleri atanmalı
+
+			for (int j = 0; j < numOfRobot; j++)//Each
+			{
+				for (int k = 0; k < numOfProc; k++)//Each
+				{
+					GRBLinExpr k7 = 0;
+					int numOfInstanceOfThisProc = (int)dtProcess.Rows[k][8] * (int)dtProcess.Rows[k][16];
+					for (int i = 0; i < numOfProcInstance; i++)//Sum
+					{
+						if (dtProcessInstance.Rows[i][0].ToString() == dtProcess.Rows[k][0].ToString())
+						{
+							k7 += x[i, j];
+						}
+					}
+					model.AddConstr(k7 == numOfInstanceOfThisProc * y[k, j], "k7(" + (j).ToString() + " Robot" + k.ToString() + " Process)");
+				}
+
+
+			}
+
+			#endregion
+
+			#region Kısıt-9: En erken başlama 
 
 			for (int i = 0; i < numOfProcInstance; i++)//Each
 			{
+				int earliestStart= Convert.ToInt32(dtProcessInstance.Rows[i][5]);
+				GRBLinExpr k9 = 0;
+				for (int j = 0; j < numOfRobot; j++)//Sum
+				{
+					k9 += s[i, j];
+				}
+				model.AddConstr(k9 >= earliestStart, "k9(" + (i).ToString() + " ProcessInst)");
+			}
+
+			#endregion
+
+			#region Kısıt-10: En geç tamamlanma 
+
+			for (int i = 0; i < numOfProcInstance; i++)//Each
+			{
+				DataTable dt = dtProcess.Select("IDProcess LIKE '%" + dtProcessInstance.Rows[i][0].ToString() + "%'").CopyToDataTable();
+				int processingTime = Convert.ToInt32(dt.Rows[0][1]);
+				int latestStart = Convert.ToInt32(dtProcessInstance.Rows[i][6]) - processingTime;
+
 				GRBLinExpr k10 = 0;
 				for (int j = 0; j < numOfRobot; j++)//Sum
 				{
 					k10 += s[i, j];
 				}
-				model.AddConstr(k10 >= 10, "k10(" + (i).ToString() + " ProcessInst)");
+				model.AddConstr(k10 <= latestStart, "k10(" + (i).ToString() + " ProcessInst)");
+			}
+
+			#endregion
+
+			#region Kısıt-11: Gecikme hesabı
+
+			for (int i = 0; i < numOfProcInstance; i++)//Each
+			{
+				GRBLinExpr k11 = 0;
+				for (int j = 0; j < numOfRobot; j++)//Sum
+				{
+					k11 += s[i, j];
+				}
+				model.AddConstr(T[i] >= k11- Convert.ToInt32(dtProcessInstance.Rows[i][5]), "k11(" + (i).ToString() + " ProcessInst)");
+			}
+
+			#endregion
+
+			#region Kısıt-12: j robotu kullanıyorsa 1 			
+
+			for (int j = 0; j < numOfRobot; j++)//Each
+			{
+				GRBLinExpr k12 = 0;
+				for (int k = 0; k < numOfProc; k++)//Sum
+				{
+					k12 += y[k, j];
+				}
+				model.AddConstr(k12 <= h[j] * M, "k12(" + (j).ToString() + " Process)");
+			}
+
+			#endregion
+
+			#region Kısıt-13: s[i,j] robot kapasitesi/planlama ufku 
+
+			for (int i = 0; i < numOfProcInstance; i++)//Each
+			{
+				for (int j = 0; j < numOfRobot; j++)//Each
+				{
+					model.AddConstr(s[i, j] <= planningHorizon - Convert.ToInt32(dtProcessInstance.Rows[i][7]), "k13(" + (i).ToString() + " ProcessInst" + j.ToString() + " Robot)");
+				}
+
 			}
 
 			#endregion
@@ -272,42 +378,9 @@ namespace RPA.MathModel
 
 			//#endregion
 
-			#region Kısıt-7: k işlem türünün tüm işlemleri atanmalı
-
-			for (int j = 0; j < numOfRobot; j++)//Each
-			{				
-				for (int k = 0; k < numOfProc; k++)//Each
-				{
-					GRBLinExpr k7 = 0;
-					int numOfInstanceOfThisProc = (int)dtProcess.Rows[k][8] * (int)dtProcess.Rows[k][16];
-					for (int i = 0; i < numOfProcInstance; i++)//Sum
-					{
-						if (dtProcessInstance.Rows[i][0].ToString() == dtProcess.Rows[k][0].ToString())
-						{
-							k7 += x[i, j];
-						}						
-					}
-					model.AddConstr(k7 == numOfInstanceOfThisProc * y[k, j], "k7(" + (j).ToString() + " Robot" + k.ToString() + " Process)");
-				}
 			
-				
-			}
 
-			#endregion
-
-			#region Kısıt-12: j robotu kullanıyorsa 1 			
-
-			for (int j = 0; j < numOfRobot; j++)//Each
-			{
-				GRBLinExpr k12 = 0;
-				for (int k = 0; k < numOfProc; k++)//Sum
-				{
-					k12 += y[k, j];
-				}
-				model.AddConstr(k12 <= h[j] * M, "k12(" + (j).ToString() + " Process)");
-			}
-
-			#endregion
+			
 
 
 			#endregion
@@ -320,7 +393,7 @@ namespace RPA.MathModel
 			//Default minimization, -1 maximize, +1 minimize
 			model.GetEnv().Set(GRB.DoubleParam.NodefileStart, 0.9);
 			model.GetEnv().Set(GRB.DoubleParam.MIPGap, 0);
-			model.GetEnv().Set(GRB.DoubleParam.TimeLimit, 100);
+			model.GetEnv().Set(GRB.DoubleParam.TimeLimit, 3600);
 			model.GetEnv().Set(GRB.DoubleParam.IterationLimit, 100000000000);
 			model.GetEnv().Set(GRB.IntParam.Threads, 1);
 			model.GetEnv().Set(GRB.IntParam.Method, 0);
@@ -432,6 +505,29 @@ namespace RPA.MathModel
 		public int[,,] PrintALPHAValue()
 		{
 			return alphad;
+		}
+
+		public DataTable resultTable(DataTable dtInstance)
+		{
+			for (int i = 0; i < sd.GetLength(0); i++)
+			{
+				for (int j = 0; j < sd.GetLength(1); j++)
+				{
+					if (sd[i,j]>0)
+					{
+						dtInstance.Rows[i][9]=sd[i,j];
+						dtInstance.Rows[i][10] = sd[i, j] + Convert.ToInt32(dtInstance.Rows[i][7]);
+
+						int tardiness = Convert.ToInt32(dtInstance.Rows[i][9]) - Convert.ToInt32(dtInstance.Rows[i][5]);
+						if (tardiness > 0) dtInstance.Rows[i][11] = tardiness;
+						else dtInstance.Rows[i][11]	= 0;
+
+						dtInstance.Rows[i][12] = j;
+					}
+				}
+			}
+
+			return dtInstance;
 		}
 	}
 }
