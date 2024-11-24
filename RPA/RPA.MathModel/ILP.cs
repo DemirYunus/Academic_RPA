@@ -2,6 +2,7 @@
 using System.Data;
 using System.Linq;
 using System.Runtime.ConstrainedExecution;
+using System.Runtime.ExceptionServices;
 using System.Security.Cryptography;
 
 namespace RPA.MathModel
@@ -15,14 +16,14 @@ namespace RPA.MathModel
 		GRBModel model;
 
 		GRBVar[] T, h;
-		GRBVar[,] x, y, s, u;
+		GRBVar[,] x, y, s, ss, u;
 		GRBVar[,,] z, v, alpha;
 
 		double[] Td;
 		int[] hd;
 		int[,] xd, yd, ud;
 		int[,,] zd, vd, alphad;
-		double[,] sd;
+		double[,] sd, ssd;
 		double obj;
 
 		public ILP(DataTable dtProcess, DataTable dtProcessInstance)
@@ -49,6 +50,7 @@ namespace RPA.MathModel
 			v = new GRBVar[numOfProcInstance, numOfProcInstance, numOfAccount];
 
 			s = new GRBVar[numOfProcInstance, numOfRobot];
+			ss = new GRBVar[numOfProcInstance, numOfAccount];
 			u = new GRBVar[3, numOfRobot];
 			T = new GRBVar[numOfProcInstance];
 			h = new GRBVar[numOfRobot];
@@ -65,10 +67,11 @@ namespace RPA.MathModel
 
 			for (int i = 0; i < numOfProcInstance; i++)
 			{
-				T[i] = model.AddVar(0, 10080, penaltyCost, GRB.CONTINUOUS, "T(" + (i).ToString() + ")");//24*60*30
-				for (int f = 0; f < numOfProcInstance; f++)
+				T[i] = model.AddVar(0, 10080, penaltyCost, GRB.CONTINUOUS, "T(" + (i).ToString() + ")");//24*60*30			
+
+				for (int l = 0; l < numOfAccount; l++)
 				{
-				
+					ss[i, l] = model.AddVar(0, 10080, 0, GRB.CONTINUOUS, "ss(" + (i).ToString() + "," + (l).ToString() + ")");//24*60*30
 				}
 
 				for (int j = 0; j < numOfRobot; j++)
@@ -85,7 +88,7 @@ namespace RPA.MathModel
 						alpha[i, f, j] = model.AddVar(0, 1, 0, GRB.BINARY, "alpha(" + (i).ToString() + "," + (f).ToString() + "," + (j).ToString() + ")");
 
 						z[i, f, j] = model.AddVar(0, 1, 0, GRB.BINARY, "z(" + (i).ToString() + "," + (f).ToString() + "," + (j).ToString() + ")");
-											
+
 					}
 
 					for (int l = 0; l < numOfAccount; l++)
@@ -162,6 +165,8 @@ namespace RPA.MathModel
 
 			#endregion
 
+			
+
 			#region Kısıt-5: Özel bölüm özel robot 
 
 			for (int m = 0; m < numOfDepartment; m++)
@@ -170,15 +175,18 @@ namespace RPA.MathModel
 				{
 					if (dtProcess.Rows[k][6].ToString() == m.ToString())
 					{
-						for (int g = 0; g < numOfProc; g++)//Each
+						for (int j = 0; j < numOfRobot; j++)//Each
 						{
-							if (dtProcess.Rows[k][6].ToString() != m.ToString())
+							GRBLinExpr k5 = 0;
+							for (int g = 0; g < numOfProc; g++)//Each
 							{
-								for (int j = 0; j < numOfRobot; j++)//Each
+								if (dtProcess.Rows[g][6].ToString() != m.ToString())
 								{
-									model.AddConstr(y[k, j] + y[g, j] == 1, "k5(" + (k).ToString() + " Process)");
+									k5 += y[g, j];
 								}
 							}
+
+							model.AddConstr(k5 <= (1 - y[k, j]) * M, "k5(" + (k).ToString() + " Process)");
 						}
 					}
 				}
@@ -337,7 +345,7 @@ namespace RPA.MathModel
 
 			#endregion
 
-			#region Kısıt-17: Ya i-j den önce ya da j-i den önce
+			#region Kısıt-17: Ya i-j den önce ya da j-i den önce (Robot için))
 
 			for (int i = 0; i < numOfProcInstance; i++)//Each
 			{
@@ -348,6 +356,76 @@ namespace RPA.MathModel
 						if (i > f)
 						{
 							model.AddConstr(z[i, f, j] + z[f, i, j] == alpha[i, f, j], "k17(" + (i).ToString() + " ProcessInst" + f.ToString() + " ProcessInst" + j.ToString() + " Robot)");
+						}
+					}
+				}
+			}
+
+			#endregion
+
+			#region Kısıt-18: s[i,j] =s[i,l] robot hesap eşleşmesi 
+
+			for (int l = 1; l < numOfAccount; l++)//Each l=0 hesap gerektirmez !
+			{
+				for (int i = 0; i < numOfProcInstance; i++)//Each
+				{
+					if (dtProcessInstance.Rows[i][14].ToString() == l.ToString())
+					{
+						GRBLinExpr k18 = 0;
+						for (int j = 0; j < numOfRobot; j++)//Sum
+						{
+							k18 += s[i, j];
+						}
+						model.AddConstr(k18 == ss[i, l], "k18(" + (l).ToString() + " Process" + (i).ToString() + " ProcessInst)");
+					}
+				}
+
+			}
+
+			#endregion
+
+			#region Kısıt-19: Aynı hesap içinde sıralama 
+			for (int l = 1; l < numOfAccount; l++)//Each l=0 hesap gerektirmez !
+			{
+				for (int i = 0; i < numOfProcInstance; i++)//Each
+				{
+					if (dtProcessInstance.Rows[i][14].ToString() == l.ToString())
+					{
+						for (int f = 0; f < numOfProcInstance; f++)//Each
+						{
+							if (dtProcessInstance.Rows[f][14].ToString() == l.ToString())
+							{
+								if (i != f)
+								{
+									int processingTime = Convert.ToInt32(dtProcessInstance.Rows[0][7]);
+
+									model.AddConstr(ss[f, l] >= ss[i, l] + processingTime - (1 - v[i, f, l]) * M, "k2(" + (i).ToString() + " ProcessInst" + l.ToString() + " Account)");
+								}
+							}
+						}
+					}
+				}
+			}
+
+			#endregion
+
+			#region Kısıt-20: Ya i-j den önce ya da j-i den önce (Hesap için)
+
+			for (int l = 1; l < numOfAccount; l++)//Each l=0 hesap gerektirmez !
+			{
+				for (int i = 0; i < numOfProcInstance; i++)//Each
+				{
+					if (dtProcessInstance.Rows[i][14].ToString() == l.ToString())
+					{
+						for (int f = 0; f < numOfProcInstance; f++)//Each
+						{
+							if (dtProcessInstance.Rows[f][14].ToString() == l.ToString())
+							{
+								if (i > f)
+								{
+									model.AddConstr(v[i, f, l] + v[f, i, l] == 1, "k20(" + (i).ToString() + " ProcessInst" + f.ToString() + " ProcessInst" + l.ToString() + " Account)");
+								}
+							}
 						}
 					}
 				}
@@ -374,13 +452,11 @@ namespace RPA.MathModel
 
 			//	}
 			//}
-
-
 			//#endregion
 
-			
 
-			
+
+
 
 
 			#endregion
@@ -413,6 +489,7 @@ namespace RPA.MathModel
 			zd = new int[numOfProcInstance, numOfProcInstance, numOfRobot];
 			vd = new int[numOfProcInstance, numOfProcInstance, numOfAccount];
 			sd = new double[numOfProcInstance, numOfRobot];
+			ssd = new double[numOfProcInstance, numOfAccount];
 			ud = new int[3, numOfRobot];
 			Td = new double[numOfProcInstance];
 			hd = new int[numOfRobot];
@@ -431,6 +508,10 @@ namespace RPA.MathModel
 
 			for (int i = 0; i < numOfProcInstance; i++)
 			{
+				for (int l = 0; l < numOfAccount; l++)
+				{
+					ssd[i, l] = ss[i, l].Get(GRB.DoubleAttr.X);
+				}
 				for (int j = 0; j < numOfRobot; j++)
 				{
 					if (x[i, j].Get(GRB.DoubleAttr.X) > 0.5) xd[i, j] = 1;
@@ -495,6 +576,11 @@ namespace RPA.MathModel
 		public double[,] PrintSValue()
 		{
 			return sd;
+		}
+
+		public double[,] PrintSSValue()
+		{
+			return ssd;
 		}
 
 		public int[,,] PrintZValue()

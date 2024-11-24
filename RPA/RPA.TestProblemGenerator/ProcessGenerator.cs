@@ -21,7 +21,7 @@ namespace RPA.TestProblemGenerator
 			dtProcesses.Columns.Add("RequiredSoftware-2", typeof(string));
 			dtProcesses.Columns.Add("RequiredSoftware-3", typeof(string));
 			dtProcesses.Columns.Add("DepartmentOfProcess", typeof(string));//6
-			dtProcesses.Columns.Add("AccountInfo", typeof(string));
+			dtProcesses.Columns.Add("AccountInfo", typeof(string));//7
 			dtProcesses.Columns.Add("NumOfWeeklyRepet", typeof(int));
 			dtProcesses.Columns.Add("TransactionDay-1", typeof(int));//9
 			dtProcesses.Columns.Add("TransactionDay-2", typeof(int));
@@ -51,8 +51,8 @@ namespace RPA.TestProblemGenerator
 				List<int> listMinute = new List<int>();
 				for (int ii = 0; ii < 7; ii++) listDay.Add(ii + 1);
 				//Uygunsuzluğu engelemek için
-				if (i%2==0) for (int ii = 0; ii < 23; ii+=2) listHour.Add(ii);				
-				else for (int ii = 1; ii < 24; ii += 2) listHour.Add(ii);
+				if (i%2==0) for (int ii = 0; ii < 22; ii+=2) listHour.Add(ii);				
+				else for (int ii = 1; ii < 22; ii += 2) listHour.Add(ii);
 				for (int ii = 0; ii < 4; ii++) listMinute.Add(ii * 15);
 
 				DataRow dr = dtProcesses.NewRow();
@@ -67,7 +67,7 @@ namespace RPA.TestProblemGenerator
 				else dr[5] = "No";
 				if (rnd.NextDouble() > 0.70) dr[6] = rnd.Next(1, numOfDepartment);
 				else dr[6] = 0;
-				if (rnd.NextDouble() > 0.80) dr[7] = rnd.Next(1, numOfAccount);
+				if (rnd.NextDouble() > 0.60) dr[7] = rnd.Next(1, numOfAccount);
 				else dr[7] = 0;
 				dr[8] = rnd.Next(1, 8);//NumOfWeeklyRepet
 				for (int j = 0; j < 7; j++)
@@ -109,6 +109,7 @@ namespace RPA.TestProblemGenerator
 			dtProcessInstanceTable.Columns.Add("Tardiness", typeof(string));//11
 			dtProcessInstanceTable.Columns.Add("RobotNumber", typeof(string));//12
 			dtProcessInstanceTable.Columns.Add("Department", typeof(string));//13
+			dtProcessInstanceTable.Columns.Add("Account", typeof(string));//14
 
 			int cnt = 0;
 			int totalNumOfInstance = dtProcess.Rows.Count * dtProcess.Rows.Count;
@@ -129,6 +130,7 @@ namespace RPA.TestProblemGenerator
 						dr[5] = (Convert.ToInt32(dtProcess.Rows[i][9 + j]) - 1) * 24 * 60 + Convert.ToInt32(time[0]) * 60 + Convert.ToInt32(time[1]);//ReleaseTime
 						dr[7] = Convert.ToInt32(dtProcess.Rows[i][1]);
 						dr[13] = dtProcess.Rows[i][6].ToString();
+						dr[14] = dtProcess.Rows[i][7].ToString();
 
 
 						dtProcessInstanceTable.Rows.Add(dr);

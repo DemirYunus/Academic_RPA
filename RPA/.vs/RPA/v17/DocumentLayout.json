@@ -3,22 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\KUROPS\u0130S\\Documents\\GitHub\\Academic_RPA\\RPA\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\KUROPS\u0130S\\Downloads\\KARBON AYAK \u0130Z\u0130\\js\\JavaScript.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\KUROPS\u0130S\\Downloads\\KARBON AYAK \u0130Z\u0130\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2E5A747D-488F-44AB-8FD6-EAB1D6F7BE6F}|RPA.MathModel\\RPA.MathModel.csproj|c:\\users\\kurops\u0130s\\documents\\github\\academic_rpa\\rpa\\rpa.mathmodel\\ilp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E5A747D-488F-44AB-8FD6-EAB1D6F7BE6F}|RPA.MathModel\\RPA.MathModel.csproj|solutionrelative:rpa.mathmodel\\ilp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D57B65EB-E76C-4546-B94B-DF30BC69D049}|RPA.PL\\RPA.PL.csproj|c:\\users\\kurops\u0130s\\documents\\github\\academic_rpa\\rpa\\rpa.pl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D57B65EB-E76C-4546-B94B-DF30BC69D049}|RPA.PL\\RPA.PL.csproj|solutionrelative:rpa.pl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4FCC2B04-A3EC-4012-8EF3-D1F53A90D3DA}|RPA.TestProblemGenerator\\RPA.TestProblemGenerator.csproj|c:\\users\\kurops\u0130s\\documents\\github\\academic_rpa\\rpa\\rpa.testproblemgenerator\\processgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4FCC2B04-A3EC-4012-8EF3-D1F53A90D3DA}|RPA.TestProblemGenerator\\RPA.TestProblemGenerator.csproj|solutionrelative:rpa.testproblemgenerator\\processgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D57B65EB-E76C-4546-B94B-DF30BC69D049}|RPA.PL\\RPA.PL.csproj|c:\\users\\kurops\u0130s\\documents\\github\\academic_rpa\\rpa\\rpa.pl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D57B65EB-E76C-4546-B94B-DF30BC69D049}|RPA.PL\\RPA.PL.csproj|solutionrelative:rpa.pl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2E5A747D-488F-44AB-8FD6-EAB1D6F7BE6F}|RPA.MathModel\\RPA.MathModel.csproj|c:\\users\\kurops\u0130s\\documents\\github\\academic_rpa\\rpa\\rpa.mathmodel\\ilp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E5A747D-488F-44AB-8FD6-EAB1D6F7BE6F}|RPA.MathModel\\RPA.MathModel.csproj|solutionrelative:rpa.mathmodel\\ilp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -28,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
@@ -38,7 +32,7 @@
               "RelativeDocumentMoniker": "RPA.MathModel\\ILP.cs",
               "ToolTip": "C:\\Users\\KUROPS\u0130S\\Documents\\GitHub\\Academic_RPA\\RPA\\RPA.MathModel\\ILP.cs",
               "RelativeToolTip": "RPA.MathModel\\ILP.cs",
-              "ViewState": "AQIAAHQAAAAAAAAAAAAqwBICAAACAAAA",
+              "ViewState": "AQIAAFsBAAAAAAAAAAD4v5sBAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-20T19:10:16.978Z",
               "IsPinned": true,
@@ -46,52 +40,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "JavaScript.js",
-              "DocumentMoniker": "C:\\Users\\KUROPS\u0130S\\Downloads\\KARBON AYAK \u0130Z\u0130\\js\\JavaScript.js",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\Downloads\\KARBON AYAK \u0130Z\u0130\\js\\JavaScript.js",
-              "ToolTip": "C:\\Users\\KUROPS\u0130S\\Downloads\\KARBON AYAK \u0130Z\u0130\\js\\JavaScript.js",
-              "RelativeToolTip": "..\\..\\..\\..\\Downloads\\KARBON AYAK \u0130Z\u0130\\js\\JavaScript.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-11-22T14:39:48.016Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "site.js",
-              "DocumentMoniker": "C:\\Users\\KUROPS\u0130S\\Downloads\\KARBON AYAK \u0130Z\u0130\\js\\site.js",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\Downloads\\KARBON AYAK \u0130Z\u0130\\js\\site.js",
-              "ToolTip": "C:\\Users\\KUROPS\u0130S\\Downloads\\KARBON AYAK \u0130Z\u0130\\js\\site.js",
-              "RelativeToolTip": "..\\..\\..\\..\\Downloads\\KARBON AYAK \u0130Z\u0130\\js\\site.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-11-22T14:39:27.541Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "ProcessGenerator.cs",
               "DocumentMoniker": "C:\\Users\\KUROPS\u0130S\\Documents\\GitHub\\Academic_RPA\\RPA\\RPA.TestProblemGenerator\\ProcessGenerator.cs",
               "RelativeDocumentMoniker": "RPA.TestProblemGenerator\\ProcessGenerator.cs",
               "ToolTip": "C:\\Users\\KUROPS\u0130S\\Documents\\GitHub\\Academic_RPA\\RPA\\RPA.TestProblemGenerator\\ProcessGenerator.cs",
               "RelativeToolTip": "RPA.TestProblemGenerator\\ProcessGenerator.cs",
-              "ViewState": "AQIAADkAAAAAAAAAAAAYwEMAAAAEAAAA",
+              "ViewState": "AQIAADMAAAAAAAAAAAAYwEUAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-21T20:20:16.021Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\KUROPS\u0130S\\Documents\\GitHub\\Academic_RPA\\RPA\\RPA.PL\\Program.cs",
               "RelativeDocumentMoniker": "RPA.PL\\Program.cs",
               "ToolTip": "C:\\Users\\KUROPS\u0130S\\Documents\\GitHub\\Academic_RPA\\RPA\\RPA.PL\\Program.cs",
               "RelativeToolTip": "RPA.PL\\Program.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAgAAAAsAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-20T14:26:32.759Z",
               "EditorCaption": ""
