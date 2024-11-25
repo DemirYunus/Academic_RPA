@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RPA.TestProblemGenerator")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+164503e4f887a92f65d3268d9d98d79f3e50fc3e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c33f846be9adcbb8227f08e1cd2269f62b091dfe")]
 [assembly: System.Reflection.AssemblyProductAttribute("RPA.TestProblemGenerator")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RPA.TestProblemGenerator")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

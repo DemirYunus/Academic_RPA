@@ -9,9 +9,13 @@ using System.Data;
 ProcessGenerator pg = new ProcessGenerator(4);
 DataTable dtProcess = pg.GenerateProcessTable(4, 4);
 DataTable dtProcessInstances = pg.GenerateProcessInstanceTable(dtProcess);
+double[] costOfSoftare = new double[3];
+costOfSoftare[0] = 100;
+costOfSoftare[1] = 150;
+costOfSoftare[2] = 200;
 
 ILP model = new ILP(dtProcess, dtProcessInstances);
-model.Solve(4, 4, 10, 0, 1, 10080);
+model.Solve(4, 4, 3, 10, 3000, costOfSoftare, 1, 10080);
 int[,] yValue = model.PrintYValue();
 int[,] xValue = model.PrintXValue();
 int[] hValue = model.PrintHValue();

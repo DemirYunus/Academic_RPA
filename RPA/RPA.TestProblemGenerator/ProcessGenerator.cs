@@ -17,7 +17,7 @@ namespace RPA.TestProblemGenerator
 			dtProcesses.Columns.Add("IDProcess", typeof(string));
 			dtProcesses.Columns.Add("ProcessingTime", typeof(int));
 			dtProcesses.Columns.Add("PriorityLevel", typeof(int));
-			dtProcesses.Columns.Add("RequiredSoftware-1", typeof(string));
+			dtProcesses.Columns.Add("RequiredSoftware-1", typeof(string));//3
 			dtProcesses.Columns.Add("RequiredSoftware-2", typeof(string));
 			dtProcesses.Columns.Add("RequiredSoftware-3", typeof(string));
 			dtProcesses.Columns.Add("DepartmentOfProcess", typeof(string));//6
@@ -59,12 +59,12 @@ namespace RPA.TestProblemGenerator
 				dr[0] = "Process" + i.ToString();
 				dr[1] = rnd.Next(65, 75);
 				dr[2] = rnd.Next(1, 4);//Low, Medium, High
-				if (rnd.NextDouble() > 0.7) dr[3] = "Yes";
-				else dr[3] = "No";
-				if (rnd.NextDouble() > 0.80) dr[4] = "Yes";
-				else dr[4] = "No";
-				if (rnd.NextDouble() > 0.90) dr[5] = "Yes";
-				else dr[5] = "No";
+				if (rnd.NextDouble() > 0.70) dr[3] = "1";
+				else dr[3] = "0";
+				if (rnd.NextDouble() > 0.75) dr[4] = "1";
+				else dr[4] = "0";
+				if (rnd.NextDouble() > 0.80) dr[5] = "1";
+				else dr[5] = "0";
 				if (rnd.NextDouble() > 0.70) dr[6] = rnd.Next(1, numOfDepartment);
 				else dr[6] = 0;
 				if (rnd.NextDouble() > 0.60) dr[7] = rnd.Next(1, numOfAccount);
@@ -110,6 +110,9 @@ namespace RPA.TestProblemGenerator
 			dtProcessInstanceTable.Columns.Add("RobotNumber", typeof(string));//12
 			dtProcessInstanceTable.Columns.Add("Department", typeof(string));//13
 			dtProcessInstanceTable.Columns.Add("Account", typeof(string));//14
+			dtProcessInstanceTable.Columns.Add("RequiredSoftware-1", typeof(string));//15
+			dtProcessInstanceTable.Columns.Add("RequiredSoftware-2", typeof(string));
+			dtProcessInstanceTable.Columns.Add("RequiredSoftware-3", typeof(string));
 
 			int cnt = 0;
 			int totalNumOfInstance = dtProcess.Rows.Count * dtProcess.Rows.Count;
@@ -131,6 +134,9 @@ namespace RPA.TestProblemGenerator
 						dr[7] = Convert.ToInt32(dtProcess.Rows[i][1]);
 						dr[13] = dtProcess.Rows[i][6].ToString();
 						dr[14] = dtProcess.Rows[i][7].ToString();
+						dr[15] = dtProcess.Rows[i][3].ToString();
+						dr[16] = dtProcess.Rows[i][4].ToString();
+						dr[17] = dtProcess.Rows[i][5].ToString();
 
 
 						dtProcessInstanceTable.Rows.Add(dr);

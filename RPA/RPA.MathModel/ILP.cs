@@ -35,7 +35,7 @@ namespace RPA.MathModel
 			model = new GRBModel(environment);
 		}
 
-		public void Solve(int numOfDepartment, int numOfAccount, int numOfRobot, double costOfRobot, double penaltyCost, int planningHorizon)
+		public void Solve(int numOfDepartment, int numOfAccount, int numOfSoftware, int numOfRobot, double costOfRobot, double[] costOfSoftsare, double penaltyCost, int planningHorizon)
 		{
 			int numOfProc = dtProcess.Rows.Count;
 			int numOfProcInstance = dtProcessInstance.Rows.Count;			
@@ -51,7 +51,7 @@ namespace RPA.MathModel
 
 			s = new GRBVar[numOfProcInstance, numOfRobot];
 			ss = new GRBVar[numOfProcInstance, numOfAccount];
-			u = new GRBVar[3, numOfRobot];
+			u = new GRBVar[numOfSoftware, numOfRobot];
 			T = new GRBVar[numOfProcInstance];
 			h = new GRBVar[numOfRobot];
 
@@ -67,7 +67,7 @@ namespace RPA.MathModel
 
 			for (int i = 0; i < numOfProcInstance; i++)
 			{
-				T[i] = model.AddVar(0, 10080, penaltyCost, GRB.CONTINUOUS, "T(" + (i).ToString() + ")");//24*60*30			
+				T[i] = model.AddVar(0, 10080, 0, GRB.CONTINUOUS, "T(" + (i).ToString() + ")");//24*60*30			
 
 				for (int l = 0; l < numOfAccount; l++)
 				{
@@ -98,11 +98,12 @@ namespace RPA.MathModel
 				}
 			}
 
-			for (int n = 0; n < 3; n++)
+			for (int n = 0; n < numOfSoftware; n++)
 			{
+				double cost = costOfSoftsare[n];
 				for (int j = 0; j < numOfRobot; j++)
 				{
-					u[n, j] = model.AddVar(0, 1, 0, GRB.BINARY, "u(" + (n).ToString() + "," + (j).ToString() + ")");
+					u[n, j] = model.AddVar(0, 1, cost, GRB.BINARY, "u(" + (n).ToString() + "," + (j).ToString() + ")");
 				}
 			}
 
@@ -154,8 +155,8 @@ namespace RPA.MathModel
 					{
 						if (i!=f)
 						{
-							DataTable dt = dtProcess.Select("IDProcess LIKE '%" + dtProcessInstance.Rows[i][0].ToString() + "%'").CopyToDataTable();
-							int processingTime = Convert.ToInt32(dt.Rows[0][1]);
+							//DataTable dt = dtProcess.Select("IDProcess LIKE '%" + dtProcessInstance.Rows[i][0].ToString() + "%'").CopyToDataTable();
+							int processingTime = Convert.ToInt32(dtProcessInstance.Rows[0][7]);
 
 							model.AddConstr(s[f, j] >= s[i, j] + processingTime - (1 - z[i, f, j]) * M, "k2(" + (i).ToString() + " ProcessInst" + j.ToString() + " Robot)");
 						}					
@@ -163,9 +164,7 @@ namespace RPA.MathModel
 				}
 			}
 
-			#endregion
-
-			
+			#endregion			
 
 			#region Kısıt-5: Özel bölüm özel robot 
 
@@ -217,6 +216,22 @@ namespace RPA.MathModel
 
 			#endregion
 
+			#region Kısıt-8: robot yazılım eşleşmesi 
+
+			for (int i = 0; i < numOfProcInstance; i++)//Each
+			{
+				for (int j = 0; j < numOfRobot; j++)//Each
+				{
+					for (int n = 0; n < numOfSoftware; n++)//Each
+					{
+						model.AddConstr(u[n, j] >= x[i, j] * Convert.ToInt32(dtProcessInstance.Rows[i][15 + n]), "k8(" + (i).ToString() + " ProcessInst" + j.ToString() + " Robot" + n.ToString() + " Software)");
+					}
+				}
+
+			}
+
+			#endregion
+
 			#region Kısıt-9: En erken başlama 
 
 			for (int i = 0; i < numOfProcInstance; i++)//Each
@@ -236,8 +251,8 @@ namespace RPA.MathModel
 
 			for (int i = 0; i < numOfProcInstance; i++)//Each
 			{
-				DataTable dt = dtProcess.Select("IDProcess LIKE '%" + dtProcessInstance.Rows[i][0].ToString() + "%'").CopyToDataTable();
-				int processingTime = Convert.ToInt32(dt.Rows[0][1]);
+				//DataTable dt = dtProcess.Select("IDProcess LIKE '%" + dtProcessInstance.Rows[i][0].ToString() + "%'").CopyToDataTable();
+				int processingTime = Convert.ToInt32(dtProcessInstance.Rows[0][7]);
 				int latestStart = Convert.ToInt32(dtProcessInstance.Rows[i][6]) - processingTime;
 
 				GRBLinExpr k10 = 0;
@@ -490,7 +505,7 @@ namespace RPA.MathModel
 			vd = new int[numOfProcInstance, numOfProcInstance, numOfAccount];
 			sd = new double[numOfProcInstance, numOfRobot];
 			ssd = new double[numOfProcInstance, numOfAccount];
-			ud = new int[3, numOfRobot];
+			ud = new int[numOfSoftware, numOfRobot];
 			Td = new double[numOfProcInstance];
 			hd = new int[numOfRobot];
 
