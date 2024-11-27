@@ -7,8 +7,10 @@ namespace RPA.TestProblemGenerator
 	public class ProcessGenerator
 	{
 		int numOfProcess;
-		public	ProcessGenerator(int numOfProcess) { 
-		this.numOfProcess = numOfProcess;	
+		int planningHorizon;
+		public	ProcessGenerator(int numOfProcess, int planningHorizon) { 
+		this.numOfProcess = numOfProcess;
+			this.planningHorizon = planningHorizon;
 		}
 
 		public DataTable GenerateProcessTable(int numOfDepartment, int numOfAccount)
@@ -73,7 +75,7 @@ namespace RPA.TestProblemGenerator
 				for (int j = 0; j < 7; j++)
 				{
 					int selectedIndex = rnd.Next(0, listDay.Count);
-					dr[9+j] = listDay[selectedIndex];
+					dr[9 + j] = listDay[selectedIndex];
 					listDay.RemoveAt(selectedIndex);
 				}
 				dr[16]= rnd.Next(1, 6);//NumOfDailyRepet
@@ -172,7 +174,7 @@ namespace RPA.TestProblemGenerator
 				{
 					if (i < dt.Rows.Count - 1)
 					{
-						dt.Rows[i - 1][6] = 10080;//7*24*60
+						dt.Rows[i - 1][6] = planningHorizon;//7*24*60
 						dt.Rows[i - 1][8] = Convert.ToInt32(dt.Rows[i - 1][6]) - Convert.ToInt32(dt.Rows[i - 1][5]);
 						dt.Rows[i][6] = dt.Rows[i + 1][5];
 						dt.Rows[i][8] = Convert.ToInt32(dt.Rows[i][6]) - Convert.ToInt32(dt.Rows[i][5]);
@@ -181,7 +183,7 @@ namespace RPA.TestProblemGenerator
 				}
 			}
 
-			dt.Rows[dt.Rows.Count-1][6] = 10080;//7*24*60
+			dt.Rows[dt.Rows.Count-1][6] = planningHorizon;//7*24*60
 			dt.Rows[dt.Rows.Count - 1][8] = Convert.ToInt32(dt.Rows[dt.Rows.Count - 1][6]) - Convert.ToInt32(dt.Rows[dt.Rows.Count - 1][5]);
 
 			return dt;

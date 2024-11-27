@@ -67,18 +67,18 @@ namespace RPA.MathModel
 
 			for (int i = 0; i < numOfProcInstance; i++)
 			{
-				T[i] = model.AddVar(0, 10080, 0, GRB.CONTINUOUS, "T(" + (i).ToString() + ")");//24*60*30			
+				T[i] = model.AddVar(0, planningHorizon, 0, GRB.CONTINUOUS, "T(" + (i).ToString() + ")");//24*60*30			
 
 				for (int l = 0; l < numOfAccount; l++)
 				{
-					ss[i, l] = model.AddVar(0, 10080, 0, GRB.CONTINUOUS, "ss(" + (i).ToString() + "," + (l).ToString() + ")");//24*60*30
+					ss[i, l] = model.AddVar(0, planningHorizon, 0, GRB.CONTINUOUS, "ss(" + (i).ToString() + "," + (l).ToString() + ")");//24*60*30
 				}
 
 				for (int j = 0; j < numOfRobot; j++)
 				{
 					x[i, j] = model.AddVar(0, 1, 0, GRB.BINARY, "x(" + (i).ToString() + "," + (j).ToString() + ")");
 
-					s[i, j] = model.AddVar(0, 10080, 0, GRB.CONTINUOUS, "s(" + (i).ToString() + "," + (j).ToString() + ")");//24*60*30
+					s[i, j] = model.AddVar(0, planningHorizon, 0, GRB.CONTINUOUS, "s(" + (i).ToString() + "," + (j).ToString() + ")");//24*60*30
 				}
 
 				for (int f = 0; f < numOfProcInstance; f++)
@@ -140,7 +140,6 @@ namespace RPA.MathModel
 				{
 					model.AddConstr(s[i, j] <= x[i, j] * M, "k2(" + (i).ToString() + " ProcessInst" + j.ToString() + " Robot)");
 				}
-
 			}
 
 			#endregion
@@ -154,9 +153,9 @@ namespace RPA.MathModel
 					for (int j = 0; j < numOfRobot; j++)//Each
 					{
 						if (i!=f)
-						{
+						{						
 							//DataTable dt = dtProcess.Select("IDProcess LIKE '%" + dtProcessInstance.Rows[i][0].ToString() + "%'").CopyToDataTable();
-							int processingTime = Convert.ToInt32(dtProcessInstance.Rows[0][7]);
+							int processingTime = Convert.ToInt32(dtProcessInstance.Rows[i][7]);
 
 							model.AddConstr(s[f, j] >= s[i, j] + processingTime - (1 - z[i, f, j]) * M, "k2(" + (i).ToString() + " ProcessInst" + j.ToString() + " Robot)");
 						}					
@@ -164,7 +163,7 @@ namespace RPA.MathModel
 				}
 			}
 
-			#endregion			
+			#endregion
 
 			#region Kısıt-5: Özel bölüm özel robot 
 
@@ -236,7 +235,7 @@ namespace RPA.MathModel
 
 			for (int i = 0; i < numOfProcInstance; i++)//Each
 			{
-				int earliestStart= Convert.ToInt32(dtProcessInstance.Rows[i][5]);
+				int earliestStart = Convert.ToInt32(dtProcessInstance.Rows[i][5]);
 				GRBLinExpr k9 = 0;
 				for (int j = 0; j < numOfRobot; j++)//Sum
 				{
@@ -252,7 +251,7 @@ namespace RPA.MathModel
 			for (int i = 0; i < numOfProcInstance; i++)//Each
 			{
 				//DataTable dt = dtProcess.Select("IDProcess LIKE '%" + dtProcessInstance.Rows[i][0].ToString() + "%'").CopyToDataTable();
-				int processingTime = Convert.ToInt32(dtProcessInstance.Rows[0][7]);
+				int processingTime = Convert.ToInt32(dtProcessInstance.Rows[i][7]);
 				int latestStart = Convert.ToInt32(dtProcessInstance.Rows[i][6]) - processingTime;
 
 				GRBLinExpr k10 = 0;
@@ -274,7 +273,7 @@ namespace RPA.MathModel
 				{
 					k11 += s[i, j];
 				}
-				model.AddConstr(T[i] >= k11- Convert.ToInt32(dtProcessInstance.Rows[i][5]), "k11(" + (i).ToString() + " ProcessInst)");
+				model.AddConstr(T[i] >= k11 - Convert.ToInt32(dtProcessInstance.Rows[i][5]), "k11(" + (i).ToString() + " ProcessInst)");
 			}
 
 			#endregion
@@ -317,8 +316,8 @@ namespace RPA.MathModel
 						if (i != f)
 						{
 							model.AddConstr(alpha[i, f, j] <= x[i, j], "k14(" + (i).ToString() + " ProcessInst" + f.ToString() + " ProcessInst" + j.ToString() + " Robot)");
+						}
 					}
-				}
 				}
 			}
 
@@ -412,7 +411,7 @@ namespace RPA.MathModel
 							{
 								if (i != f)
 								{
-									int processingTime = Convert.ToInt32(dtProcessInstance.Rows[0][7]);
+									int processingTime = Convert.ToInt32(dtProcessInstance.Rows[i][7]);
 
 									model.AddConstr(ss[f, l] >= ss[i, l] + processingTime - (1 - v[i, f, l]) * M, "k2(" + (i).ToString() + " ProcessInst" + l.ToString() + " Account)");
 								}
@@ -489,7 +488,7 @@ namespace RPA.MathModel
 			model.GetEnv().Set(GRB.IntParam.Threads, 1);
 			model.GetEnv().Set(GRB.IntParam.Method, 0);
 			//model.GetEnv().Set(GRB.IntParam.OutputFlag, 0);
-			//model.Write((j + 1).ToString() + ". modelSokMarkettt.lp");
+			model.Write("modelRPA.lp");
 			//Console.WriteLine("model yazildi");
 			//Console.ReadKey();
 			model.Optimize();
