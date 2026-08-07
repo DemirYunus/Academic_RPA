@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.10.34916.146
+# Visual Studio Version 18
+VisualStudioVersion = 18.8.12023.21 stable
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RPA.TestProblemGenerator", "RPA.TestProblemGenerator\RPA.TestProblemGenerator.csproj", "{4FCC2B04-A3EC-4012-8EF3-D1F53A90D3DA}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RPA.MathModel", "RPA.MathModel\RPA.MathModel.csproj", "{2E5A747D-488F-44AB-8FD6-EAB1D6F7BE6F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPA.DAL", "RPA.DAL\RPA.DAL.csproj", "{5B8849C9-C32A-4182-B127-C99A6E6E4339}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPA.GRASP", "RPA.GRASP\RPA.GRASP.csproj", "{735C2CE4-AF6D-4F8E-BDBE-AF44B44AB0B7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{5B8849C9-C32A-4182-B127-C99A6E6E4339}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B8849C9-C32A-4182-B127-C99A6E6E4339}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B8849C9-C32A-4182-B127-C99A6E6E4339}.Release|Any CPU.Build.0 = Release|Any CPU
+		{735C2CE4-AF6D-4F8E-BDBE-AF44B44AB0B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{735C2CE4-AF6D-4F8E-BDBE-AF44B44AB0B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{735C2CE4-AF6D-4F8E-BDBE-AF44B44AB0B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{735C2CE4-AF6D-4F8E-BDBE-AF44B44AB0B7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

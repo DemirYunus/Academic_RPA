@@ -1,0 +1,12 @@
+D:\GitHub\Academic_RPA\RPA\RPA.GRASP\bin\Debug\net8.0\RPA.GRASP.deps.json
+D:\GitHub\Academic_RPA\RPA\RPA.GRASP\bin\Debug\net8.0\RPA.GRASP.dll
+D:\GitHub\Academic_RPA\RPA\RPA.GRASP\bin\Debug\net8.0\RPA.GRASP.pdb
+D:\GitHub\Academic_RPA\RPA\RPA.GRASP\obj\Debug\net8.0\RPA.GRASP.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub\Academic_RPA\RPA\RPA.GRASP\obj\Debug\net8.0\RPA.GRASP.AssemblyInfoInputs.cache
+D:\GitHub\Academic_RPA\RPA\RPA.GRASP\obj\Debug\net8.0\RPA.GRASP.AssemblyInfo.cs
+D:\GitHub\Academic_RPA\RPA\RPA.GRASP\obj\Debug\net8.0\RPA.GRASP.csproj.CoreCompileInputs.cache
+D:\GitHub\Academic_RPA\RPA\RPA.GRASP\obj\Debug\net8.0\RPA.GRASP.sourcelink.json
+D:\GitHub\Academic_RPA\RPA\RPA.GRASP\obj\Debug\net8.0\RPA.GRASP.dll
+D:\GitHub\Academic_RPA\RPA\RPA.GRASP\obj\Debug\net8.0\refint\RPA.GRASP.dll
+D:\GitHub\Academic_RPA\RPA\RPA.GRASP\obj\Debug\net8.0\RPA.GRASP.pdb
+D:\GitHub\Academic_RPA\RPA\RPA.GRASP\obj\Debug\net8.0\ref\RPA.GRASP.dll

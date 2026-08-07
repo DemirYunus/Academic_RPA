@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "targets": {
     "net8.0": {
       "Azure.Core/1.38.0": {
@@ -1615,6 +1615,16 @@
         },
         "runtime": {
           "bin/placeholder/RPA.DAL.dll": {}
+        }
+      },
+      "RPA.GRASP/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/RPA.GRASP.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RPA.GRASP.dll": {}
         }
       },
       "RPA.MathModel/1.0.0": {
@@ -4733,6 +4743,11 @@
       "path": "../RPA.DAL/RPA.DAL.csproj",
       "msbuildProject": "../RPA.DAL/RPA.DAL.csproj"
     },
+    "RPA.GRASP/1.0.0": {
+      "type": "project",
+      "path": "../RPA.GRASP/RPA.GRASP.csproj",
+      "msbuildProject": "../RPA.GRASP/RPA.GRASP.csproj"
+    },
     "RPA.MathModel/1.0.0": {
       "type": "project",
       "path": "../RPA.MathModel/RPA.MathModel.csproj",
@@ -4749,28 +4764,30 @@
       "Microsoft.EntityFrameworkCore >= 9.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 9.0.0",
       "RPA.DAL >= 1.0.0",
+      "RPA.GRASP >= 1.0.0",
       "RPA.MathModel >= 1.0.0",
       "RPA.TestProblemGenerator >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\KUROPSİS\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Yunus\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\KUROPSİS\\Documents\\GitHub\\Academic_RPA\\RPA\\RPA.PL\\RPA.PL.csproj",
+      "projectUniqueName": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.PL\\RPA.PL.csproj",
       "projectName": "RPA.PL",
-      "projectPath": "C:\\Users\\KUROPSİS\\Documents\\GitHub\\Academic_RPA\\RPA\\RPA.PL\\RPA.PL.csproj",
-      "packagesPath": "C:\\Users\\KUROPSİS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\KUROPSİS\\Documents\\GitHub\\Academic_RPA\\RPA\\RPA.PL\\obj\\",
+      "projectPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.PL\\RPA.PL.csproj",
+      "packagesPath": "C:\\Users\\Yunus\\.nuget\\packages\\",
+      "outputPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.PL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\KUROPSİS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Yunus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4778,21 +4795,24 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
+          "framework": "net8.0",
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\KUROPSİS\\Documents\\GitHub\\Academic_RPA\\RPA\\RPA.DAL\\RPA.DAL.csproj": {
-              "projectPath": "C:\\Users\\KUROPSİS\\Documents\\GitHub\\Academic_RPA\\RPA\\RPA.DAL\\RPA.DAL.csproj"
+            "D:\\GitHub\\Academic_RPA\\RPA\\RPA.DAL\\RPA.DAL.csproj": {
+              "projectPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.DAL\\RPA.DAL.csproj"
             },
-            "C:\\Users\\KUROPSİS\\Documents\\GitHub\\Academic_RPA\\RPA\\RPA.MathModel\\RPA.MathModel.csproj": {
-              "projectPath": "C:\\Users\\KUROPSİS\\Documents\\GitHub\\Academic_RPA\\RPA\\RPA.MathModel\\RPA.MathModel.csproj"
+            "D:\\GitHub\\Academic_RPA\\RPA\\RPA.GRASP\\RPA.GRASP.csproj": {
+              "projectPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.GRASP\\RPA.GRASP.csproj"
             },
-            "C:\\Users\\KUROPSİS\\Documents\\GitHub\\Academic_RPA\\RPA\\RPA.TestProblemGenerator\\RPA.TestProblemGenerator.csproj": {
-              "projectPath": "C:\\Users\\KUROPSİS\\Documents\\GitHub\\Academic_RPA\\RPA\\RPA.TestProblemGenerator\\RPA.TestProblemGenerator.csproj"
+            "D:\\GitHub\\Academic_RPA\\RPA\\RPA.MathModel\\RPA.MathModel.csproj": {
+              "projectPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.MathModel\\RPA.MathModel.csproj"
+            },
+            "D:\\GitHub\\Academic_RPA\\RPA\\RPA.TestProblemGenerator\\RPA.TestProblemGenerator.csproj": {
+              "projectPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.TestProblemGenerator\\RPA.TestProblemGenerator.csproj"
             }
           }
         }
@@ -4806,10 +4826,12 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "10.0.300"
     },
     "frameworks": {
       "net8.0": {
+        "framework": "net8.0",
         "targetAlias": "net8.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": {
@@ -4839,7 +4861,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.307/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.302/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

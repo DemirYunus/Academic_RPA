@@ -1,23 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\KUROPSİS\\Documents\\GitHub\\Academic_RPA\\RPA\\RPA.PL\\RPA.PL.csproj": {}
+    "D:\\GitHub\\Academic_RPA\\RPA\\RPA.PL\\RPA.PL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\KUROPSİS\\Documents\\GitHub\\Academic_RPA\\RPA\\RPA.DAL\\RPA.DAL.csproj": {
+    "D:\\GitHub\\Academic_RPA\\RPA\\RPA.DAL\\RPA.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\KUROPSİS\\Documents\\GitHub\\Academic_RPA\\RPA\\RPA.DAL\\RPA.DAL.csproj",
+        "projectUniqueName": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.DAL\\RPA.DAL.csproj",
         "projectName": "RPA.DAL",
-        "projectPath": "C:\\Users\\KUROPSİS\\Documents\\GitHub\\Academic_RPA\\RPA\\RPA.DAL\\RPA.DAL.csproj",
-        "packagesPath": "C:\\Users\\KUROPSİS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\KUROPSİS\\Documents\\GitHub\\Academic_RPA\\RPA\\RPA.DAL\\obj\\",
+        "projectPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.DAL\\RPA.DAL.csproj",
+        "packagesPath": "C:\\Users\\Yunus\\.nuget\\packages\\",
+        "outputPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\KUROPSİS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Yunus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -25,11 +26,11 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
+            "framework": "net8.0",
             "targetAlias": "net8.0",
             "projectReferences": {}
           }
@@ -43,10 +44,12 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
         "net8.0": {
+          "framework": "net8.0",
           "targetAlias": "net8.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
@@ -80,24 +83,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.307/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\KUROPSİS\\Documents\\GitHub\\Academic_RPA\\RPA\\RPA.MathModel\\RPA.MathModel.csproj": {
+    "D:\\GitHub\\Academic_RPA\\RPA\\RPA.GRASP\\RPA.GRASP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\KUROPSİS\\Documents\\GitHub\\Academic_RPA\\RPA\\RPA.MathModel\\RPA.MathModel.csproj",
-        "projectName": "RPA.MathModel",
-        "projectPath": "C:\\Users\\KUROPSİS\\Documents\\GitHub\\Academic_RPA\\RPA\\RPA.MathModel\\RPA.MathModel.csproj",
-        "packagesPath": "C:\\Users\\KUROPSİS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\KUROPSİS\\Documents\\GitHub\\Academic_RPA\\RPA\\RPA.MathModel\\obj\\",
+        "projectUniqueName": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.GRASP\\RPA.GRASP.csproj",
+        "projectName": "RPA.GRASP",
+        "projectPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.GRASP\\RPA.GRASP.csproj",
+        "packagesPath": "C:\\Users\\Yunus\\.nuget\\packages\\",
+        "outputPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.GRASP\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\KUROPSİS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Yunus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -105,11 +109,11 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
+            "framework": "net8.0",
             "targetAlias": "net8.0",
             "projectReferences": {}
           }
@@ -123,10 +127,12 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
         "net8.0": {
+          "framework": "net8.0",
           "targetAlias": "net8.0",
           "imports": [
             "net461",
@@ -144,24 +150,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.307/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\KUROPSİS\\Documents\\GitHub\\Academic_RPA\\RPA\\RPA.PL\\RPA.PL.csproj": {
+    "D:\\GitHub\\Academic_RPA\\RPA\\RPA.MathModel\\RPA.MathModel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\KUROPSİS\\Documents\\GitHub\\Academic_RPA\\RPA\\RPA.PL\\RPA.PL.csproj",
-        "projectName": "RPA.PL",
-        "projectPath": "C:\\Users\\KUROPSİS\\Documents\\GitHub\\Academic_RPA\\RPA\\RPA.PL\\RPA.PL.csproj",
-        "packagesPath": "C:\\Users\\KUROPSİS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\KUROPSİS\\Documents\\GitHub\\Academic_RPA\\RPA\\RPA.PL\\obj\\",
+        "projectUniqueName": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.MathModel\\RPA.MathModel.csproj",
+        "projectName": "RPA.MathModel",
+        "projectPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.MathModel\\RPA.MathModel.csproj",
+        "packagesPath": "C:\\Users\\Yunus\\.nuget\\packages\\",
+        "outputPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.MathModel\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\KUROPSİS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Yunus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -169,21 +176,91 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
+            "framework": "net8.0",
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "framework": "net8.0",
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\GitHub\\Academic_RPA\\RPA\\RPA.PL\\RPA.PL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.PL\\RPA.PL.csproj",
+        "projectName": "RPA.PL",
+        "projectPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.PL\\RPA.PL.csproj",
+        "packagesPath": "C:\\Users\\Yunus\\.nuget\\packages\\",
+        "outputPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.PL\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Yunus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "framework": "net8.0",
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\KUROPSİS\\Documents\\GitHub\\Academic_RPA\\RPA\\RPA.DAL\\RPA.DAL.csproj": {
-                "projectPath": "C:\\Users\\KUROPSİS\\Documents\\GitHub\\Academic_RPA\\RPA\\RPA.DAL\\RPA.DAL.csproj"
+              "D:\\GitHub\\Academic_RPA\\RPA\\RPA.DAL\\RPA.DAL.csproj": {
+                "projectPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.DAL\\RPA.DAL.csproj"
               },
-              "C:\\Users\\KUROPSİS\\Documents\\GitHub\\Academic_RPA\\RPA\\RPA.MathModel\\RPA.MathModel.csproj": {
-                "projectPath": "C:\\Users\\KUROPSİS\\Documents\\GitHub\\Academic_RPA\\RPA\\RPA.MathModel\\RPA.MathModel.csproj"
+              "D:\\GitHub\\Academic_RPA\\RPA\\RPA.GRASP\\RPA.GRASP.csproj": {
+                "projectPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.GRASP\\RPA.GRASP.csproj"
               },
-              "C:\\Users\\KUROPSİS\\Documents\\GitHub\\Academic_RPA\\RPA\\RPA.TestProblemGenerator\\RPA.TestProblemGenerator.csproj": {
-                "projectPath": "C:\\Users\\KUROPSİS\\Documents\\GitHub\\Academic_RPA\\RPA\\RPA.TestProblemGenerator\\RPA.TestProblemGenerator.csproj"
+              "D:\\GitHub\\Academic_RPA\\RPA\\RPA.MathModel\\RPA.MathModel.csproj": {
+                "projectPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.MathModel\\RPA.MathModel.csproj"
+              },
+              "D:\\GitHub\\Academic_RPA\\RPA\\RPA.TestProblemGenerator\\RPA.TestProblemGenerator.csproj": {
+                "projectPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.TestProblemGenerator\\RPA.TestProblemGenerator.csproj"
               }
             }
           }
@@ -197,10 +274,12 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
         "net8.0": {
+          "framework": "net8.0",
           "targetAlias": "net8.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
@@ -230,24 +309,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.307/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\KUROPSİS\\Documents\\GitHub\\Academic_RPA\\RPA\\RPA.TestProblemGenerator\\RPA.TestProblemGenerator.csproj": {
+    "D:\\GitHub\\Academic_RPA\\RPA\\RPA.TestProblemGenerator\\RPA.TestProblemGenerator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\KUROPSİS\\Documents\\GitHub\\Academic_RPA\\RPA\\RPA.TestProblemGenerator\\RPA.TestProblemGenerator.csproj",
+        "projectUniqueName": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.TestProblemGenerator\\RPA.TestProblemGenerator.csproj",
         "projectName": "RPA.TestProblemGenerator",
-        "projectPath": "C:\\Users\\KUROPSİS\\Documents\\GitHub\\Academic_RPA\\RPA\\RPA.TestProblemGenerator\\RPA.TestProblemGenerator.csproj",
-        "packagesPath": "C:\\Users\\KUROPSİS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\KUROPSİS\\Documents\\GitHub\\Academic_RPA\\RPA\\RPA.TestProblemGenerator\\obj\\",
+        "projectPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.TestProblemGenerator\\RPA.TestProblemGenerator.csproj",
+        "packagesPath": "C:\\Users\\Yunus\\.nuget\\packages\\",
+        "outputPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.TestProblemGenerator\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\KUROPSİS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Yunus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -255,11 +335,11 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
+            "framework": "net8.0",
             "targetAlias": "net8.0",
             "projectReferences": {}
           }
@@ -273,10 +353,12 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
         "net8.0": {
+          "framework": "net8.0",
           "targetAlias": "net8.0",
           "imports": [
             "net461",
@@ -294,7 +376,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.307/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

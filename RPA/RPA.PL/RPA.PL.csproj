@@ -17,6 +17,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\RPA.DAL\RPA.DAL.csproj" />
+    <ProjectReference Include="..\RPA.GRASP\RPA.GRASP.csproj" />
     <ProjectReference Include="..\RPA.MathModel\RPA.MathModel.csproj" />
     <ProjectReference Include="..\RPA.TestProblemGenerator\RPA.TestProblemGenerator.csproj" />
   </ItemGroup>

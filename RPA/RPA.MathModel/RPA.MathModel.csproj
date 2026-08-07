@@ -7,8 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Reference Include="Gurobi120.NET">
-      <HintPath>..\..\..\..\..\..\..\gurobi1200\win64\bin\Gurobi120.NET.dll</HintPath>
+    <Reference Include="Gurobi130.NET">
+      <HintPath>C:\gurobi1302\win64\bin\Gurobi130.NET.dll</HintPath>
     </Reference>
   </ItemGroup>
 
