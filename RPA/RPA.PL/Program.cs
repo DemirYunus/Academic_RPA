@@ -10,18 +10,32 @@ using RPA.GRASP;
 
 
 
-//ProcessGenerator pg = new ProcessGenerator(4,10080);
+//ProcessGenerator pg = new ProcessGenerator(4, 10080);
 //DataTable dtProcess = pg.GenerateProcessTable(4, 4);
 //DataTable dtProcessInstances = pg.GenerateProcessInstanceTable(dtProcess);
 
-//GetData gd = new GetData();
+GetData gd = new GetData();
 //DataTable dtProcess = gd.GetProcessData();
-//DataTable dtProcessInstances = gd.GetProcessInstanceData();
+DataTable dtProcessInstances = gd.GetProcessInstanceData();
+List<TaskProcess> lstProcess = ProcessDataLoader.LoadProcessesFromDataTable(dtProcessInstances);
 
-//double[] costOfSoftare = new double[3];
-//costOfSoftare[0] = 100;
-//costOfSoftare[1] = 150;
-//costOfSoftare[2] = 200;
+// 1. Rastgele sıralanmış liste
+List<TaskProcess> randomList = ProcessListGenerator.GetRandomSorted(lstProcess);
+
+// 2. Instance sayısına göre (Büyükten Küçüğe) sıralanmış liste
+List<TaskProcess> mostInstancesFirstList = ProcessListGenerator.GetSortedByInstanceCountDesc(lstProcess);
+
+// 3. Ortalama WindowLenght değerine göre (Küçükten Büyüğe) sıralanmış liste
+List<TaskProcess> shortestWindowAvgFirstList = ProcessListGenerator.GetSortedByAvgWindowLengthAsc(lstProcess);
+
+// Ortalama ProcessingTime değerine göre (Büyükten Küçüğe) sıralanmış liste
+List<TaskProcess> longestProcessingAvgFirstList = ProcessListGenerator.GetSortedByAvgProcessingTimeDesc(lstProcess);
+
+
+double[] costOfSoftare = new double[3];
+costOfSoftare[0] = 100;
+costOfSoftare[1] = 150;
+costOfSoftare[2] = 200;
 
 //ILP model = new ILP(dtProcess, dtProcessInstances);
 //model.Solve(4, 4, 3, 7, 3000, costOfSoftare, 1, 1440); //10080

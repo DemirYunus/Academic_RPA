@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RPA.GRASP")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a7823da24f03f7aca57775a9aae1e00270861943")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ae95d187ac7d495e21b92c4237d1a0e02ba3b353")]
 [assembly: System.Reflection.AssemblyProductAttribute("RPA.GRASP")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RPA.GRASP")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

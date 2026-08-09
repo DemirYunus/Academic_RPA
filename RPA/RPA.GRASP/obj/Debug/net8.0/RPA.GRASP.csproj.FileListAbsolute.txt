@@ -10,3 +10,7 @@ D:\GitHub\Academic_RPA\RPA\RPA.GRASP\obj\Debug\net8.0\RPA.GRASP.dll
 D:\GitHub\Academic_RPA\RPA\RPA.GRASP\obj\Debug\net8.0\refint\RPA.GRASP.dll
 D:\GitHub\Academic_RPA\RPA\RPA.GRASP\obj\Debug\net8.0\RPA.GRASP.pdb
 D:\GitHub\Academic_RPA\RPA\RPA.GRASP\obj\Debug\net8.0\ref\RPA.GRASP.dll
+D:\GitHub\Academic_RPA\RPA\RPA.GRASP\bin\Debug\net8.0\RPA.DAL.dll
+D:\GitHub\Academic_RPA\RPA\RPA.GRASP\bin\Debug\net8.0\RPA.DAL.pdb
+D:\GitHub\Academic_RPA\RPA\RPA.GRASP\obj\Debug\net8.0\RPA.GRASP.csproj.AssemblyReference.cache
+D:\GitHub\Academic_RPA\RPA\RPA.GRASP\obj\Debug\net8.0\RPA.GRASP.csproj.Up2Date

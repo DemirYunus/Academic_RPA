@@ -986,6 +986,9 @@
         }
       },
       "RPA.GRASP/1.0.0": {
+        "dependencies": {
+          "RPA.DAL": "1.0.0"
+        },
         "runtime": {
           "RPA.GRASP.dll": {
             "assemblyVersion": "1.0.0.0",
@@ -1009,11 +1012,11 @@
           }
         }
       },
-      "Gurobi120.NET/12.0.0.0": {
+      "Gurobi130.NET/13.0.0.0": {
         "runtime": {
-          "Gurobi120.NET.dll": {
-            "assemblyVersion": "12.0.0.0",
-            "fileVersion": "12.0.0.0"
+          "Gurobi130.NET.dll": {
+            "assemblyVersion": "13.0.0.0",
+            "fileVersion": "13.0.2.0"
           }
         }
       }
@@ -1458,7 +1461,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Gurobi120.NET/12.0.0.0": {
+    "Gurobi130.NET/13.0.0.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""

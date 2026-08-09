@@ -115,7 +115,11 @@
           "net8.0": {
             "framework": "net8.0",
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\GitHub\\Academic_RPA\\RPA\\RPA.DAL\\RPA.DAL.csproj": {
+                "projectPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.DAL\\RPA.DAL.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

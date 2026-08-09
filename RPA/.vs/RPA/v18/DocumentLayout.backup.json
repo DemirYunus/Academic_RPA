@@ -7,8 +7,8 @@
       "RelativeMoniker": "D:0:0:{D57B65EB-E76C-4546-B94B-DF30BC69D049}|RPA.PL\\RPA.PL.csproj|solutionrelative:rpa.pl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{735C2CE4-AF6D-4F8E-BDBE-AF44B44AB0B7}|RPA.GRASP\\RPA.GRASP.csproj|d:\\github\\academic_rpa\\rpa\\rpa.grasp\\windowfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{735C2CE4-AF6D-4F8E-BDBE-AF44B44AB0B7}|RPA.GRASP\\RPA.GRASP.csproj|solutionrelative:rpa.grasp\\windowfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{735C2CE4-AF6D-4F8E-BDBE-AF44B44AB0B7}|RPA.GRASP\\RPA.GRASP.csproj|d:\\github\\academic_rpa\\rpa\\rpa.grasp\\processlistgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{735C2CE4-AF6D-4F8E-BDBE-AF44B44AB0B7}|RPA.GRASP\\RPA.GRASP.csproj|solutionrelative:rpa.grasp\\processlistgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,14 +23,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "WindowFilter.cs",
-              "DocumentMoniker": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.GRASP\\WindowFilter.cs",
-              "RelativeDocumentMoniker": "RPA.GRASP\\WindowFilter.cs",
-              "ToolTip": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.GRASP\\WindowFilter.cs",
-              "RelativeToolTip": "RPA.GRASP\\WindowFilter.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAADwvxsAAAAxAAAAAAAAAA==",
+              "Title": "ProcessListGenerator.cs",
+              "DocumentMoniker": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.GRASP\\ProcessListGenerator.cs",
+              "RelativeDocumentMoniker": "RPA.GRASP\\ProcessListGenerator.cs",
+              "ToolTip": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.GRASP\\ProcessListGenerator.cs",
+              "RelativeToolTip": "RPA.GRASP\\ProcessListGenerator.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwCAAAABVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-07T19:47:01.282Z",
+              "WhenOpened": "2026-08-08T13:50:25.404Z",
               "EditorCaption": ""
             },
             {
@@ -41,7 +41,7 @@
               "RelativeDocumentMoniker": "RPA.PL\\Program.cs",
               "ToolTip": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.PL\\Program.cs",
               "RelativeToolTip": "RPA.PL\\Program.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAAIwEIAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAB8AAAByAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-07T15:02:31.513Z",
               "EditorCaption": ""
