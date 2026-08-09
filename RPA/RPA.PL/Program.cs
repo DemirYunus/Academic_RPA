@@ -48,6 +48,36 @@ costOfSoftare[2] = 200;
 
 //DataTable dtResult = model.resultTable(dtProcessInstances);
 
+// Başlangıç R1 tanımlanır.
+Robot rbt = new Robot();
+rbt.KaynakAdi = "R1";
+List<Robot> lstRobot=new List<Robot>();
+lstRobot.Add(rbt);
+
+do
+{
+// Ana listeden aday liste oluşturulur
+// Aday listeden bir proses seçilir.
+
+    //Uygun robot seçilir
+
+    //foreach (Instance item in process.InstancesOfProcess)
+    //{
+        //Seçilen robota yerleşebilmesi kontrol edilir
+
+        //Eğer yerleşebilirse
+            //instance değerleri güncellenir
+            //robot değerleri güncellenir
+            
+        //Eğeryerleşemez ise
+            //Bir sonraki robot kontrol edilir
+
+        //Eğer hiçbirine yerleşemez ise yeni robot oluşturularak yerleştirilir.
+    //}
+} while (lstRobot.Count>0);
+
+
+
 // Kaynakları tanımla ve planlayıcıyı başlat
 var resources = new List<string> { "R1", "R2", "R3" };
 var scheduler = new ResourceScheduler(resources);

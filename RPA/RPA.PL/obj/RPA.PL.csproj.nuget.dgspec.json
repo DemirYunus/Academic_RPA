@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GitHub\\Academic_RPA\\RPA\\RPA.PL\\RPA.PL.csproj": {}
+    "D:\\Academic_RPA\\RPA\\RPA.PL\\RPA.PL.csproj": {}
   },
   "projects": {
-    "D:\\GitHub\\Academic_RPA\\RPA\\RPA.DAL\\RPA.DAL.csproj": {
+    "D:\\Academic_RPA\\RPA\\RPA.DAL\\RPA.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.DAL\\RPA.DAL.csproj",
+        "projectUniqueName": "D:\\Academic_RPA\\RPA\\RPA.DAL\\RPA.DAL.csproj",
         "projectName": "RPA.DAL",
-        "projectPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.DAL\\RPA.DAL.csproj",
-        "packagesPath": "C:\\Users\\Yunus\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.DAL\\obj\\",
+        "projectPath": "D:\\Academic_RPA\\RPA\\RPA.DAL\\RPA.DAL.csproj",
+        "packagesPath": "C:\\Users\\yunus\\.nuget\\packages\\",
+        "outputPath": "D:\\Academic_RPA\\RPA\\RPA.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Yunus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\yunus\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -87,20 +88,20 @@
         }
       }
     },
-    "D:\\GitHub\\Academic_RPA\\RPA\\RPA.GRASP\\RPA.GRASP.csproj": {
+    "D:\\Academic_RPA\\RPA\\RPA.GRASP\\RPA.GRASP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.GRASP\\RPA.GRASP.csproj",
+        "projectUniqueName": "D:\\Academic_RPA\\RPA\\RPA.GRASP\\RPA.GRASP.csproj",
         "projectName": "RPA.GRASP",
-        "projectPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.GRASP\\RPA.GRASP.csproj",
-        "packagesPath": "C:\\Users\\Yunus\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.GRASP\\obj\\",
+        "projectPath": "D:\\Academic_RPA\\RPA\\RPA.GRASP\\RPA.GRASP.csproj",
+        "packagesPath": "C:\\Users\\yunus\\.nuget\\packages\\",
+        "outputPath": "D:\\Academic_RPA\\RPA\\RPA.GRASP\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Yunus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\yunus\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -109,6 +110,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -116,8 +118,8 @@
             "framework": "net8.0",
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\GitHub\\Academic_RPA\\RPA\\RPA.DAL\\RPA.DAL.csproj": {
-                "projectPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.DAL\\RPA.DAL.csproj"
+              "D:\\Academic_RPA\\RPA\\RPA.DAL\\RPA.DAL.csproj": {
+                "projectPath": "D:\\Academic_RPA\\RPA\\RPA.DAL\\RPA.DAL.csproj"
               }
             }
           }
@@ -158,20 +160,20 @@
         }
       }
     },
-    "D:\\GitHub\\Academic_RPA\\RPA\\RPA.MathModel\\RPA.MathModel.csproj": {
+    "D:\\Academic_RPA\\RPA\\RPA.MathModel\\RPA.MathModel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.MathModel\\RPA.MathModel.csproj",
+        "projectUniqueName": "D:\\Academic_RPA\\RPA\\RPA.MathModel\\RPA.MathModel.csproj",
         "projectName": "RPA.MathModel",
-        "projectPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.MathModel\\RPA.MathModel.csproj",
-        "packagesPath": "C:\\Users\\Yunus\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.MathModel\\obj\\",
+        "projectPath": "D:\\Academic_RPA\\RPA\\RPA.MathModel\\RPA.MathModel.csproj",
+        "packagesPath": "C:\\Users\\yunus\\.nuget\\packages\\",
+        "outputPath": "D:\\Academic_RPA\\RPA\\RPA.MathModel\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Yunus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\yunus\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -180,6 +182,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -225,20 +228,20 @@
         }
       }
     },
-    "D:\\GitHub\\Academic_RPA\\RPA\\RPA.PL\\RPA.PL.csproj": {
+    "D:\\Academic_RPA\\RPA\\RPA.PL\\RPA.PL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.PL\\RPA.PL.csproj",
+        "projectUniqueName": "D:\\Academic_RPA\\RPA\\RPA.PL\\RPA.PL.csproj",
         "projectName": "RPA.PL",
-        "projectPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.PL\\RPA.PL.csproj",
-        "packagesPath": "C:\\Users\\Yunus\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.PL\\obj\\",
+        "projectPath": "D:\\Academic_RPA\\RPA\\RPA.PL\\RPA.PL.csproj",
+        "packagesPath": "C:\\Users\\yunus\\.nuget\\packages\\",
+        "outputPath": "D:\\Academic_RPA\\RPA\\RPA.PL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Yunus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\yunus\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -247,6 +250,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -254,17 +258,17 @@
             "framework": "net8.0",
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\GitHub\\Academic_RPA\\RPA\\RPA.DAL\\RPA.DAL.csproj": {
-                "projectPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.DAL\\RPA.DAL.csproj"
+              "D:\\Academic_RPA\\RPA\\RPA.DAL\\RPA.DAL.csproj": {
+                "projectPath": "D:\\Academic_RPA\\RPA\\RPA.DAL\\RPA.DAL.csproj"
               },
-              "D:\\GitHub\\Academic_RPA\\RPA\\RPA.GRASP\\RPA.GRASP.csproj": {
-                "projectPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.GRASP\\RPA.GRASP.csproj"
+              "D:\\Academic_RPA\\RPA\\RPA.GRASP\\RPA.GRASP.csproj": {
+                "projectPath": "D:\\Academic_RPA\\RPA\\RPA.GRASP\\RPA.GRASP.csproj"
               },
-              "D:\\GitHub\\Academic_RPA\\RPA\\RPA.MathModel\\RPA.MathModel.csproj": {
-                "projectPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.MathModel\\RPA.MathModel.csproj"
+              "D:\\Academic_RPA\\RPA\\RPA.MathModel\\RPA.MathModel.csproj": {
+                "projectPath": "D:\\Academic_RPA\\RPA\\RPA.MathModel\\RPA.MathModel.csproj"
               },
-              "D:\\GitHub\\Academic_RPA\\RPA\\RPA.TestProblemGenerator\\RPA.TestProblemGenerator.csproj": {
-                "projectPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.TestProblemGenerator\\RPA.TestProblemGenerator.csproj"
+              "D:\\Academic_RPA\\RPA\\RPA.TestProblemGenerator\\RPA.TestProblemGenerator.csproj": {
+                "projectPath": "D:\\Academic_RPA\\RPA\\RPA.TestProblemGenerator\\RPA.TestProblemGenerator.csproj"
               }
             }
           }
@@ -317,20 +321,20 @@
         }
       }
     },
-    "D:\\GitHub\\Academic_RPA\\RPA\\RPA.TestProblemGenerator\\RPA.TestProblemGenerator.csproj": {
+    "D:\\Academic_RPA\\RPA\\RPA.TestProblemGenerator\\RPA.TestProblemGenerator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.TestProblemGenerator\\RPA.TestProblemGenerator.csproj",
+        "projectUniqueName": "D:\\Academic_RPA\\RPA\\RPA.TestProblemGenerator\\RPA.TestProblemGenerator.csproj",
         "projectName": "RPA.TestProblemGenerator",
-        "projectPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.TestProblemGenerator\\RPA.TestProblemGenerator.csproj",
-        "packagesPath": "C:\\Users\\Yunus\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.TestProblemGenerator\\obj\\",
+        "projectPath": "D:\\Academic_RPA\\RPA\\RPA.TestProblemGenerator\\RPA.TestProblemGenerator.csproj",
+        "packagesPath": "C:\\Users\\yunus\\.nuget\\packages\\",
+        "outputPath": "D:\\Academic_RPA\\RPA\\RPA.TestProblemGenerator\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Yunus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\yunus\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -339,6 +343,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

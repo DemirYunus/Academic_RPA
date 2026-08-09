@@ -33,3 +33,15 @@ D:\GitHub\Academic_RPA\RPA\RPA.TestProblemGenerator\obj\Debug\net8.0\RPA.TestPro
 D:\GitHub\Academic_RPA\RPA\RPA.TestProblemGenerator\obj\Debug\net8.0\refint\RPA.TestProblemGenerator.dll
 D:\GitHub\Academic_RPA\RPA\RPA.TestProblemGenerator\obj\Debug\net8.0\RPA.TestProblemGenerator.pdb
 D:\GitHub\Academic_RPA\RPA\RPA.TestProblemGenerator\obj\Debug\net8.0\ref\RPA.TestProblemGenerator.dll
+D:\Academic_RPA\RPA\RPA.TestProblemGenerator\bin\Debug\net8.0\RPA.TestProblemGenerator.deps.json
+D:\Academic_RPA\RPA\RPA.TestProblemGenerator\bin\Debug\net8.0\RPA.TestProblemGenerator.dll
+D:\Academic_RPA\RPA\RPA.TestProblemGenerator\bin\Debug\net8.0\RPA.TestProblemGenerator.pdb
+D:\Academic_RPA\RPA\RPA.TestProblemGenerator\obj\Debug\net8.0\RPA.TestProblemGenerator.GeneratedMSBuildEditorConfig.editorconfig
+D:\Academic_RPA\RPA\RPA.TestProblemGenerator\obj\Debug\net8.0\RPA.TestProblemGenerator.AssemblyInfoInputs.cache
+D:\Academic_RPA\RPA\RPA.TestProblemGenerator\obj\Debug\net8.0\RPA.TestProblemGenerator.AssemblyInfo.cs
+D:\Academic_RPA\RPA\RPA.TestProblemGenerator\obj\Debug\net8.0\RPA.TestProblemGenerator.csproj.CoreCompileInputs.cache
+D:\Academic_RPA\RPA\RPA.TestProblemGenerator\obj\Debug\net8.0\RPA.TestProblemGenerator.sourcelink.json
+D:\Academic_RPA\RPA\RPA.TestProblemGenerator\obj\Debug\net8.0\RPA.TestProblemGenerator.dll
+D:\Academic_RPA\RPA\RPA.TestProblemGenerator\obj\Debug\net8.0\refint\RPA.TestProblemGenerator.dll
+D:\Academic_RPA\RPA\RPA.TestProblemGenerator\obj\Debug\net8.0\RPA.TestProblemGenerator.pdb
+D:\Academic_RPA\RPA\RPA.TestProblemGenerator\obj\Debug\net8.0\ref\RPA.TestProblemGenerator.dll
