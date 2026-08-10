@@ -4734,23 +4734,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\yunus\\.nuget\\packages\\": {},
+    "C:\\Users\\Yunus\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Academic_RPA\\RPA\\RPA.DAL\\RPA.DAL.csproj",
+      "projectUniqueName": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.DAL\\RPA.DAL.csproj",
       "projectName": "RPA.DAL",
-      "projectPath": "D:\\Academic_RPA\\RPA\\RPA.DAL\\RPA.DAL.csproj",
-      "packagesPath": "C:\\Users\\yunus\\.nuget\\packages\\",
-      "outputPath": "D:\\Academic_RPA\\RPA\\RPA.DAL\\obj\\",
+      "projectPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.DAL\\RPA.DAL.csproj",
+      "packagesPath": "C:\\Users\\Yunus\\.nuget\\packages\\",
+      "outputPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.DAL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\yunus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Yunus\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4759,7 +4759,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

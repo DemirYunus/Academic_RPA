@@ -49,32 +49,56 @@ costOfSoftare[2] = 200;
 //DataTable dtResult = model.resultTable(dtProcessInstances);
 
 // Başlangıç R1 tanımlanır.
-Robot rbt = new Robot();
-rbt.KaynakAdi = "R1";
-List<Robot> lstRobot=new List<Robot>();
-lstRobot.Add(rbt);
+var r1 = new Robot
+{
+    RobotName = "R1",
+    AllocatedDepartment = "IT",
+    IIR = new List<Instance> { new Instance(), new Instance() }, // 2 adet IIR
+    LstIdleWindow = new List<IdleWindow> { new IdleWindow(10, 20) }, // Ortalama: 10
+    LoadedSoftware = new List<Software> { new Software { Name = "SW1" } }
+};
+List<Robot> rawRobotList = new List<Robot>();
+rawRobotList.Add(r1);
 
 do
 {
-// Ana listeden aday liste oluşturulur
-// Aday listeden bir proses seçilir.
+    // Ana listeden aday liste oluşturulur
+    // Aday listeden bir proses seçilir.
+
+    GraspCandidateSelector slct= new GraspCandidateSelector();
+    TaskProcess candidateTaskProcess = slct.SelectByProcessingTime_ValueBased(longestProcessingAvgFirstList, 0.5);
 
     //Uygun robot seçilir
+    // İlgili TaskProcess'in Department ve Account bilgilerini verdiğimizi varsayıyoruz.
+    RobotListGenerator robotListGenerator = new RobotListGenerator(candidateTaskProcess.Department, candidateTaskProcess.Account, candidateTaskProcess.RequiredSoftwares, rawRobotList);
+
+    if (candidateTaskProcess.Department!=0)
+    {
+        robotListGenerator.SortByAllocatedDepartment(RobotSortRule.IdleWindowAverageDurationDescending);
+    }
+    else
+    {
+        if (candidateTaskProcess.RequiredSoftwares.Count>0)
+        {
+            robotListGenerator.SortByLoadedSoftware(RobotSortRule.IdleWindowAverageDurationAscending);
+        }
+    }
+
 
     //foreach (Instance item in process.InstancesOfProcess)
     //{
-        //Seçilen robota yerleşebilmesi kontrol edilir
+    //Seçilen robota yerleşebilmesi kontrol edilir
 
-        //Eğer yerleşebilirse
-            //instance değerleri güncellenir
-            //robot değerleri güncellenir
-            
-        //Eğeryerleşemez ise
-            //Bir sonraki robot kontrol edilir
+    //Eğer yerleşebilirse
+    //instance değerleri güncellenir
+    //robot değerleri güncellenir
 
-        //Eğer hiçbirine yerleşemez ise yeni robot oluşturularak yerleştirilir.
+    //Eğeryerleşemez ise
+    //Bir sonraki robot kontrol edilir
+
+    //Eğer hiçbirine yerleşemez ise yeni robot oluşturularak yerleştirilir.
     //}
-} while (lstRobot.Count>0);
+} while (rawRobotList.Count>0);
 
 
 

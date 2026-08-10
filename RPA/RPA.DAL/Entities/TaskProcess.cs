@@ -6,16 +6,25 @@ public class TaskProcess
     public string ProcessID { get; set; }
     public int Department { get; set; }
     public int Account { get; set; }
-    public int Software1 { get; set; }
-    public int Software2 { get; set; }
-    public int Software3 { get; set; }
+
+    // Yazılımları dinamik bir liste olarak tutuyoruz
+    public List<Software> RequiredSoftwares { get; set; }
 
     public List<Instance> InstancesOfProcess { get; set; }
 
     public TaskProcess()
     {
         InstancesOfProcess = new List<Instance>();
+        RequiredSoftwares = new List<Software>();
     }
+}
+
+public class Software
+{
+    // Eski integer değerler yerine string tabanlı özellik
+    public string Name { get; set; }
+
+    // İleride gerekirse buraya int LicenseCapacity, string Version vb. eklenebilir
 }
 
 public class Instance

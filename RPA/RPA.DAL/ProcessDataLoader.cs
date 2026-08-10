@@ -27,11 +27,33 @@ public class ProcessDataLoader
                 {
                     ProcessID = processId,
                     Department = row["Department"] != DBNull.Value ? Convert.ToInt32(row["Department"]) : 0,
-                    Account = row["Account"] != DBNull.Value ? Convert.ToInt32(row["Account"]) : 0,
-                    Software1 = row["Software-1"] != DBNull.Value ? Convert.ToInt32(row["Software-1"]) : 0,
-                    Software2 = row["Software-2"] != DBNull.Value ? Convert.ToInt32(row["Software-2"]) : 0,
-                    Software3 = row["Software-3"] != DBNull.Value ? Convert.ToInt32(row["Software-3"]) : 0
+                    Account = row["Account"] != DBNull.Value ? Convert.ToInt32(row["Account"]) : 0
                 };
+
+                // Eski Software1, 2, 3 property'leri yerine yeni liste yapısına ekleme yapıyoruz
+                // DataTable'da bu alanların değerleri "0" olarak geliyorsa gereksinim yoktur varsayımı ile kontrol ediyoruz
+
+                string sw1 = row["Software-1"] != DBNull.Value ? row["Software-1"].ToString() : "";
+                if (sw1 == "1") sw1 = "sw1";
+                if (!string.IsNullOrWhiteSpace(sw1) && sw1 != "0")
+                {
+                    newProcess.RequiredSoftwares.Add(new Software { Name = sw1 });
+                }
+
+                string sw2 = row["Software-2"] != DBNull.Value ? row["Software-2"].ToString() : "";
+                if (sw2 == "1") sw2 = "sw2";
+                if (!string.IsNullOrWhiteSpace(sw2) && sw2 != "0")
+                {
+                    newProcess.RequiredSoftwares.Add(new Software { Name = sw2 });
+                }
+
+                string sw3 = row["Software-3"] != DBNull.Value ? row["Software-3"].ToString() : "";
+                if (sw3 == "1") sw3 = "sw3";
+                if (!string.IsNullOrWhiteSpace(sw3) && sw3 != "0")
+                {
+                    newProcess.RequiredSoftwares.Add(new Software { Name = sw3 });
+                }
+
                 processDict.Add(processId, newProcess);
             }
 

@@ -1,18 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Academic_RPA\\RPA\\",
+  "WorkspaceRootPath": "D:\\GitHub\\Academic_RPA\\RPA\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D57B65EB-E76C-4546-B94B-DF30BC69D049}|RPA.PL\\RPA.PL.csproj|d:\\academic_rpa\\rpa\\rpa.pl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D57B65EB-E76C-4546-B94B-DF30BC69D049}|RPA.PL\\RPA.PL.csproj|d:\\github\\academic_rpa\\rpa\\rpa.pl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D57B65EB-E76C-4546-B94B-DF30BC69D049}|RPA.PL\\RPA.PL.csproj|solutionrelative:rpa.pl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5B8849C9-C32A-4182-B127-C99A6E6E4339}|RPA.DAL\\RPA.DAL.csproj|d:\\academic_rpa\\rpa\\rpa.dal\\entities\\robot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B8849C9-C32A-4182-B127-C99A6E6E4339}|RPA.DAL\\RPA.DAL.csproj|solutionrelative:rpa.dal\\entities\\robot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{735C2CE4-AF6D-4F8E-BDBE-AF44B44AB0B7}|RPA.GRASP\\RPA.GRASP.csproj|d:\\github\\academic_rpa\\rpa\\rpa.grasp\\robotlistgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{735C2CE4-AF6D-4F8E-BDBE-AF44B44AB0B7}|RPA.GRASP\\RPA.GRASP.csproj|solutionrelative:rpa.grasp\\robotlistgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{735C2CE4-AF6D-4F8E-BDBE-AF44B44AB0B7}|RPA.GRASP\\RPA.GRASP.csproj|d:\\academic_rpa\\rpa\\rpa.grasp\\timehorizon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{735C2CE4-AF6D-4F8E-BDBE-AF44B44AB0B7}|RPA.GRASP\\RPA.GRASP.csproj|solutionrelative:rpa.grasp\\timehorizon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5B8849C9-C32A-4182-B127-C99A6E6E4339}|RPA.DAL\\RPA.DAL.csproj|d:\\github\\academic_rpa\\rpa\\rpa.dal\\entities\\taskprocess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B8849C9-C32A-4182-B127-C99A6E6E4339}|RPA.DAL\\RPA.DAL.csproj|solutionrelative:rpa.dal\\entities\\taskprocess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B8849C9-C32A-4182-B127-C99A6E6E4339}|RPA.DAL\\RPA.DAL.csproj|d:\\github\\academic_rpa\\rpa\\rpa.dal\\entities\\robot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B8849C9-C32A-4182-B127-C99A6E6E4339}|RPA.DAL\\RPA.DAL.csproj|solutionrelative:rpa.dal\\entities\\robot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,45 +26,57 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Robot.cs",
-              "DocumentMoniker": "D:\\Academic_RPA\\RPA\\RPA.DAL\\Entities\\Robot.cs",
+              "DocumentMoniker": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.DAL\\Entities\\Robot.cs",
               "RelativeDocumentMoniker": "RPA.DAL\\Entities\\Robot.cs",
-              "ToolTip": "D:\\Academic_RPA\\RPA\\RPA.DAL\\Entities\\Robot.cs",
+              "ToolTip": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.DAL\\Entities\\Robot.cs",
               "RelativeToolTip": "RPA.DAL\\Entities\\Robot.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAwAQAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-09T17:53:24.268Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-10T13:34:57.251Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "TimeHorizon.cs",
-              "DocumentMoniker": "D:\\Academic_RPA\\RPA\\RPA.GRASP\\TimeHorizon.cs",
-              "RelativeDocumentMoniker": "RPA.GRASP\\TimeHorizon.cs",
-              "ToolTip": "D:\\Academic_RPA\\RPA\\RPA.GRASP\\TimeHorizon.cs",
-              "RelativeToolTip": "RPA.GRASP\\TimeHorizon.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAADAAAAAAAAAA==",
+              "Title": "TaskProcess.cs",
+              "DocumentMoniker": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.DAL\\Entities\\TaskProcess.cs",
+              "RelativeDocumentMoniker": "RPA.DAL\\Entities\\TaskProcess.cs",
+              "ToolTip": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.DAL\\Entities\\TaskProcess.cs",
+              "RelativeToolTip": "RPA.DAL\\Entities\\TaskProcess.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAA6wAYAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-09T15:17:48.718Z",
+              "WhenOpened": "2026-08-10T13:33:48.454Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RobotListGenerator.cs",
+              "DocumentMoniker": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.GRASP\\RobotListGenerator.cs",
+              "RelativeDocumentMoniker": "RPA.GRASP\\RobotListGenerator.cs",
+              "ToolTip": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.GRASP\\RobotListGenerator.cs",
+              "RelativeToolTip": "RPA.GRASP\\RobotListGenerator.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAADwv0gAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-10T11:50:58.355Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Academic_RPA\\RPA\\RPA.PL\\Program.cs",
+              "DocumentMoniker": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.PL\\Program.cs",
               "RelativeDocumentMoniker": "RPA.PL\\Program.cs",
-              "ToolTip": "D:\\Academic_RPA\\RPA\\RPA.PL\\Program.cs",
+              "ToolTip": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.PL\\Program.cs",
               "RelativeToolTip": "RPA.PL\\Program.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAiwDMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAIwEoAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-07T15:02:31.513Z",
+              "WhenOpened": "2026-08-10T05:30:43.251Z",
               "EditorCaption": ""
             }
           ]
