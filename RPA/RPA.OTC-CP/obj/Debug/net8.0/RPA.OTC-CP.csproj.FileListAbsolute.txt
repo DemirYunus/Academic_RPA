@@ -1,0 +1,17 @@
+D:\RPA\RPA.OTC-CP\obj\Debug\net8.0\RPA.OTC-CP.csproj.AssemblyReference.cache
+D:\RPA\RPA.OTC-CP\obj\Debug\net8.0\RPA.OTC-CP.GeneratedMSBuildEditorConfig.editorconfig
+D:\RPA\RPA.OTC-CP\obj\Debug\net8.0\RPA.OTC-CP.AssemblyInfoInputs.cache
+D:\RPA\RPA.OTC-CP\obj\Debug\net8.0\RPA.OTC-CP.AssemblyInfo.cs
+D:\RPA\RPA.OTC-CP\obj\Debug\net8.0\RPA.OTC-CP.csproj.CoreCompileInputs.cache
+D:\RPA\RPA.OTC-CP\bin\Debug\net8.0\RPA.OTC-CP.deps.json
+D:\RPA\RPA.OTC-CP\bin\Debug\net8.0\RPA.OTC-CP.dll
+D:\RPA\RPA.OTC-CP\bin\Debug\net8.0\RPA.OTC-CP.pdb
+D:\RPA\RPA.OTC-CP\bin\Debug\net8.0\RPA.DAL.dll
+D:\RPA\RPA.OTC-CP\bin\Debug\net8.0\RPA.LNS_MD.dll
+D:\RPA\RPA.OTC-CP\bin\Debug\net8.0\RPA.DAL.pdb
+D:\RPA\RPA.OTC-CP\bin\Debug\net8.0\RPA.LNS_MD.pdb
+D:\RPA\RPA.OTC-CP\obj\Debug\net8.0\RPA.OTC-CP.csproj.Up2Date
+D:\RPA\RPA.OTC-CP\obj\Debug\net8.0\RPA.OTC-CP.dll
+D:\RPA\RPA.OTC-CP\obj\Debug\net8.0\refint\RPA.OTC-CP.dll
+D:\RPA\RPA.OTC-CP\obj\Debug\net8.0\RPA.OTC-CP.pdb
+D:\RPA\RPA.OTC-CP\obj\Debug\net8.0\ref\RPA.OTC-CP.dll

@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>RPA.OTC_CP</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RPA.DAL\RPA.DAL.csproj" />
+    <ProjectReference Include="..\RPA.LNS_MD\RPA.LNS_MD.csproj" />
+  </ItemGroup>
+
+</Project>

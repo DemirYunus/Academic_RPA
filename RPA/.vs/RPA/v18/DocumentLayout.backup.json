@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\RPA\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D57B65EB-E76C-4546-B94B-DF30BC69D049}|RPA.PL\\RPA.PL.csproj|d:\\rpa\\rpa.pl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D57B65EB-E76C-4546-B94B-DF30BC69D049}|RPA.PL\\RPA.PL.csproj|solutionrelative:rpa.pl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6407F24-5144-47EE-A857-4904249DCC04}|RPA.LNS_MD\\RPA.LNS_MD.csproj|d:\\rpa\\rpa.lns_md\\destructionoperators.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6407F24-5144-47EE-A857-4904249DCC04}|RPA.LNS_MD\\RPA.LNS_MD.csproj|solutionrelative:rpa.lns_md\\destructionoperators.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6407F24-5144-47EE-A857-4904249DCC04}|RPA.LNS_MD\\RPA.LNS_MD.csproj|d:\\rpa\\rpa.lns_md\\solver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6407F24-5144-47EE-A857-4904249DCC04}|RPA.LNS_MD\\RPA.LNS_MD.csproj|solutionrelative:rpa.lns_md\\solver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DestructionOperators.cs",
+              "DocumentMoniker": "D:\\RPA\\RPA.LNS_MD\\DestructionOperators.cs",
+              "RelativeDocumentMoniker": "RPA.LNS_MD\\DestructionOperators.cs",
+              "ToolTip": "D:\\RPA\\RPA.LNS_MD\\DestructionOperators.cs",
+              "RelativeToolTip": "RPA.LNS_MD\\DestructionOperators.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAIwFsAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-29T20:28:05.707Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Solver.cs",
+              "DocumentMoniker": "D:\\RPA\\RPA.LNS_MD\\Solver.cs",
+              "RelativeDocumentMoniker": "RPA.LNS_MD\\Solver.cs",
+              "ToolTip": "D:\\RPA\\RPA.LNS_MD\\Solver.cs",
+              "RelativeToolTip": "RPA.LNS_MD\\Solver.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-29T20:24:49.203Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\RPA\\RPA.PL\\Program.cs",
+              "RelativeDocumentMoniker": "RPA.PL\\Program.cs",
+              "ToolTip": "D:\\RPA\\RPA.PL\\Program.cs",
+              "RelativeToolTip": "RPA.PL\\Program.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAkwDcAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-26T13:14:09.521Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

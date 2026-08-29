@@ -1,0 +1,15 @@
+D:\RPA\RPA.LNS_MD\bin\Debug\net8.0\RPA.LNS_MD.deps.json
+D:\RPA\RPA.LNS_MD\bin\Debug\net8.0\RPA.LNS_MD.dll
+D:\RPA\RPA.LNS_MD\bin\Debug\net8.0\RPA.LNS_MD.pdb
+D:\RPA\RPA.LNS_MD\bin\Debug\net8.0\RPA.DAL.dll
+D:\RPA\RPA.LNS_MD\bin\Debug\net8.0\RPA.DAL.pdb
+D:\RPA\RPA.LNS_MD\obj\Debug\net8.0\RPA.LNS_MD.csproj.AssemblyReference.cache
+D:\RPA\RPA.LNS_MD\obj\Debug\net8.0\RPA.LNS_MD.GeneratedMSBuildEditorConfig.editorconfig
+D:\RPA\RPA.LNS_MD\obj\Debug\net8.0\RPA.LNS_MD.AssemblyInfoInputs.cache
+D:\RPA\RPA.LNS_MD\obj\Debug\net8.0\RPA.LNS_MD.AssemblyInfo.cs
+D:\RPA\RPA.LNS_MD\obj\Debug\net8.0\RPA.LNS_MD.csproj.CoreCompileInputs.cache
+D:\RPA\RPA.LNS_MD\obj\Debug\net8.0\RPA.LNS_MD.csproj.Up2Date
+D:\RPA\RPA.LNS_MD\obj\Debug\net8.0\RPA.LNS_MD.dll
+D:\RPA\RPA.LNS_MD\obj\Debug\net8.0\refint\RPA.LNS_MD.dll
+D:\RPA\RPA.LNS_MD\obj\Debug\net8.0\RPA.LNS_MD.pdb
+D:\RPA\RPA.LNS_MD\obj\Debug\net8.0\ref\RPA.LNS_MD.dll
