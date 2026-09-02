@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "imlogtASIUU=",
+  "dgSpecHash": "TOfAOXMP1lI=",
   "success": true,
-  "projectFilePath": "D:\\RPA\\RPA.DAL\\RPA.DAL.csproj",
+  "projectFilePath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.DAL\\RPA.DAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Yunus\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Yunus\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

@@ -5090,11 +5090,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\RPA\\RPA.OTC-CP\\RPA.OTC-CP.csproj",
+      "projectUniqueName": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.OTC-CP\\RPA.OTC-CP.csproj",
       "projectName": "RPA.OTC-CP",
-      "projectPath": "D:\\RPA\\RPA.OTC-CP\\RPA.OTC-CP.csproj",
+      "projectPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.OTC-CP\\RPA.OTC-CP.csproj",
       "packagesPath": "C:\\Users\\Yunus\\.nuget\\packages\\",
-      "outputPath": "D:\\RPA\\RPA.OTC-CP\\obj\\",
+      "outputPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.OTC-CP\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -5116,11 +5116,11 @@
           "framework": "net8.0",
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\RPA\\RPA.DAL\\RPA.DAL.csproj": {
-              "projectPath": "D:\\RPA\\RPA.DAL\\RPA.DAL.csproj"
+            "D:\\GitHub\\Academic_RPA\\RPA\\RPA.DAL\\RPA.DAL.csproj": {
+              "projectPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.DAL\\RPA.DAL.csproj"
             },
-            "D:\\RPA\\RPA.LNS_MD\\RPA.LNS_MD.csproj": {
-              "projectPath": "D:\\RPA\\RPA.LNS_MD\\RPA.LNS_MD.csproj"
+            "D:\\GitHub\\Academic_RPA\\RPA\\RPA.LNS_MD\\RPA.LNS_MD.csproj": {
+              "projectPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.LNS_MD\\RPA.LNS_MD.csproj"
             }
           }
         }

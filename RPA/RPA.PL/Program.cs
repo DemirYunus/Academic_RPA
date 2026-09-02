@@ -77,7 +77,7 @@ else
         List<TaskProcess> lstProcess = ProcessDataLoader.LoadProcessesFromDataTable(dtProcessInstances);
 
         //GRASP
-        List<Robot> rawRobotList = RPA.GRASP.Solve.SolveGRASP(lstProcess);
+        List<Robot> rawRobotList = RPA.GRASP.Solver.SolveGRASP(lstProcess);
         double currentCostBeforeLNS = SolutionEvaluator.CalculateCost(rawRobotList, lstProcess);
 
         // CP-based Large Neighborhood Search (LNS)

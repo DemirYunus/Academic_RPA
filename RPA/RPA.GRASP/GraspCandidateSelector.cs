@@ -83,9 +83,64 @@ public class GraspCandidateSelector
         return SelectRandomFromList(rcl);
     }
 
+    // 2. YENİ RCL METODU: Makro-Kategori ve Sıkılık Tabanlı RCL
+    public TaskProcess SelectByMacroTierAndTightness_ValueBased(List<TaskProcess> sortedList, double alpha)
+    {
+        if (sortedList == null || !sortedList.Any()) return null;
+
+        var topTask = sortedList.First();
+
+        // O anki en öncelikli işin hangi MAKRO kategoride olduğunu bul
+        bool hasAccountConstraint = topTask.Account > 0;
+        bool hasDeptConstraint = topTask.Department > 0;
+
+        List<TaskProcess> macroTierCandidates;
+
+        // 1. Makro Kategori Havuzunu Oluştur (Havuz genişletildi, rastgelelik kurtarıldı)
+        if (hasAccountConstraint)
+        {
+            // KATEGORİ 1: Account kısıtı olan TÜM işler (Account ID'si fark etmez)
+            macroTierCandidates = sortedList.Where(tp => tp.Account > 0).ToList();
+        }
+        else if (hasDeptConstraint)
+        {
+            // KATEGORİ 2: Account yok ama Departman kısıtı olan TÜM işler
+            macroTierCandidates = sortedList.Where(tp => tp.Account <= 0 && tp.Department > 0).ToList();
+        }
+        else
+        {
+            // KATEGORİ 3: Tamamen Evrensel işler
+            macroTierCandidates = sortedList.Where(tp => tp.Account <= 0 && tp.Department <= 0).ToList();
+        }
+
+        // 2. Sıkılık (Tightness) Üzerinden Değer Tabanlı Eşik (Alpha) Uygula
+        // Makro havuz içindeki en sıkı ve en gevşek değerleri dinamik bul
+        double c_max = macroTierCandidates.Max(tp => GetMaxTightness(tp));
+        double c_min = macroTierCandidates.Min(tp => GetMaxTightness(tp));
+
+        // Maksimizasyon kuralı (Sıkılığı eşiğin üzerinde olanları RCL'ye al)
+        double threshold = c_max - alpha * (c_max - c_min);
+
+        var rcl = macroTierCandidates.Where(tp => GetMaxTightness(tp) >= threshold).ToList();
+
+        return SelectRandomFromList(rcl);
+    }
+
     // ========================================================================
     // Ortak Yardımcı Metotlar
     // ========================================================================
+
+    // 1. YARDIMCI METOT: Prosesin Maksimum Sıkılığını (Tightness) Hesaplar
+    private double GetMaxTightness(TaskProcess tp)
+    {
+        if (tp.InstancesOfProcess == null || !tp.InstancesOfProcess.Any())
+            return 0.0;
+
+        return tp.InstancesOfProcess.Max(i =>
+            (i.DueTime - i.ReleaseTime) > 0
+                ? (double)i.ProcessingTime / (i.DueTime - i.ReleaseTime)
+                : 1.0);
+    }
 
     private TaskProcess SelectRandomFromTopK(List<TaskProcess> sortedList, int k)
     {

@@ -9,7 +9,9 @@ public enum RobotSortRule
     IdleWindowAverageDurationAscending,
     IirCountDescending,
     IdleWindowCountDescending,
-    IdleWindowAverageDurationDescending
+    IdleWindowAverageDurationDescending,
+    SortByUtilizationAscending,
+    SortByUtilizationDescending
 }
 
 public class RobotListGenerator

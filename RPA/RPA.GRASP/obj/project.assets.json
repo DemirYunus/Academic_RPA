@@ -2833,11 +2833,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\RPA\\RPA.GRASP\\RPA.GRASP.csproj",
+      "projectUniqueName": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.GRASP\\RPA.GRASP.csproj",
       "projectName": "RPA.GRASP",
-      "projectPath": "D:\\RPA\\RPA.GRASP\\RPA.GRASP.csproj",
+      "projectPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.GRASP\\RPA.GRASP.csproj",
       "packagesPath": "C:\\Users\\Yunus\\.nuget\\packages\\",
-      "outputPath": "D:\\RPA\\RPA.GRASP\\obj\\",
+      "outputPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.GRASP\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2859,8 +2859,8 @@
           "framework": "net8.0",
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\RPA\\RPA.DAL\\RPA.DAL.csproj": {
-              "projectPath": "D:\\RPA\\RPA.DAL\\RPA.DAL.csproj"
+            "D:\\GitHub\\Academic_RPA\\RPA\\RPA.DAL\\RPA.DAL.csproj": {
+              "projectPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.DAL\\RPA.DAL.csproj"
             }
           }
         }

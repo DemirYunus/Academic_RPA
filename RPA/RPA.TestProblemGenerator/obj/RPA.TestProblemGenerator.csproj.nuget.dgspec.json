@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\RPA\\RPA.TestProblemGenerator\\RPA.TestProblemGenerator.csproj": {}
+    "D:\\GitHub\\Academic_RPA\\RPA\\RPA.TestProblemGenerator\\RPA.TestProblemGenerator.csproj": {}
   },
   "projects": {
-    "D:\\RPA\\RPA.TestProblemGenerator\\RPA.TestProblemGenerator.csproj": {
+    "D:\\GitHub\\Academic_RPA\\RPA\\RPA.TestProblemGenerator\\RPA.TestProblemGenerator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\RPA\\RPA.TestProblemGenerator\\RPA.TestProblemGenerator.csproj",
+        "projectUniqueName": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.TestProblemGenerator\\RPA.TestProblemGenerator.csproj",
         "projectName": "RPA.TestProblemGenerator",
-        "projectPath": "D:\\RPA\\RPA.TestProblemGenerator\\RPA.TestProblemGenerator.csproj",
+        "projectPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.TestProblemGenerator\\RPA.TestProblemGenerator.csproj",
         "packagesPath": "C:\\Users\\Yunus\\.nuget\\packages\\",
-        "outputPath": "D:\\RPA\\RPA.TestProblemGenerator\\obj\\",
+        "outputPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.TestProblemGenerator\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

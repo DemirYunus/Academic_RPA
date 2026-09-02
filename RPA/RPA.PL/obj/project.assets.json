@@ -7638,11 +7638,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\RPA\\RPA.PL\\RPA.PL.csproj",
+      "projectUniqueName": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.PL\\RPA.PL.csproj",
       "projectName": "RPA.PL",
-      "projectPath": "D:\\RPA\\RPA.PL\\RPA.PL.csproj",
+      "projectPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.PL\\RPA.PL.csproj",
       "packagesPath": "C:\\Users\\Yunus\\.nuget\\packages\\",
-      "outputPath": "D:\\RPA\\RPA.PL\\obj\\",
+      "outputPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.PL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -7664,26 +7664,26 @@
           "framework": "net8.0",
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\RPA\\RPA.DAL\\RPA.DAL.csproj": {
-              "projectPath": "D:\\RPA\\RPA.DAL\\RPA.DAL.csproj"
+            "D:\\GitHub\\Academic_RPA\\RPA\\RPA.DAL\\RPA.DAL.csproj": {
+              "projectPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.DAL\\RPA.DAL.csproj"
             },
-            "D:\\RPA\\RPA.GRASP\\RPA.GRASP.csproj": {
-              "projectPath": "D:\\RPA\\RPA.GRASP\\RPA.GRASP.csproj"
+            "D:\\GitHub\\Academic_RPA\\RPA\\RPA.GRASP\\RPA.GRASP.csproj": {
+              "projectPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.GRASP\\RPA.GRASP.csproj"
             },
-            "D:\\RPA\\RPA.LNS\\RPA.LNS.csproj": {
-              "projectPath": "D:\\RPA\\RPA.LNS\\RPA.LNS.csproj"
+            "D:\\GitHub\\Academic_RPA\\RPA\\RPA.LNS\\RPA.LNS.csproj": {
+              "projectPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.LNS\\RPA.LNS.csproj"
             },
-            "D:\\RPA\\RPA.LNS_MD\\RPA.LNS_MD.csproj": {
-              "projectPath": "D:\\RPA\\RPA.LNS_MD\\RPA.LNS_MD.csproj"
+            "D:\\GitHub\\Academic_RPA\\RPA\\RPA.LNS_MD\\RPA.LNS_MD.csproj": {
+              "projectPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.LNS_MD\\RPA.LNS_MD.csproj"
             },
-            "D:\\RPA\\RPA.MathModel\\RPA.MathModel.csproj": {
-              "projectPath": "D:\\RPA\\RPA.MathModel\\RPA.MathModel.csproj"
+            "D:\\GitHub\\Academic_RPA\\RPA\\RPA.MathModel\\RPA.MathModel.csproj": {
+              "projectPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.MathModel\\RPA.MathModel.csproj"
             },
-            "D:\\RPA\\RPA.OTC-CP\\RPA.OTC-CP.csproj": {
-              "projectPath": "D:\\RPA\\RPA.OTC-CP\\RPA.OTC-CP.csproj"
+            "D:\\GitHub\\Academic_RPA\\RPA\\RPA.OTC-CP\\RPA.OTC-CP.csproj": {
+              "projectPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.OTC-CP\\RPA.OTC-CP.csproj"
             },
-            "D:\\RPA\\RPA.TestProblemGenerator\\RPA.TestProblemGenerator.csproj": {
-              "projectPath": "D:\\RPA\\RPA.TestProblemGenerator\\RPA.TestProblemGenerator.csproj"
+            "D:\\GitHub\\Academic_RPA\\RPA\\RPA.TestProblemGenerator\\RPA.TestProblemGenerator.csproj": {
+              "projectPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.TestProblemGenerator\\RPA.TestProblemGenerator.csproj"
             }
           }
         }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\RPA\\RPA.PL\\RPA.PL.csproj": {}
+    "D:\\GitHub\\Academic_RPA\\RPA\\RPA.PL\\RPA.PL.csproj": {}
   },
   "projects": {
-    "D:\\RPA\\RPA.DAL\\RPA.DAL.csproj": {
+    "D:\\GitHub\\Academic_RPA\\RPA\\RPA.DAL\\RPA.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\RPA\\RPA.DAL\\RPA.DAL.csproj",
+        "projectUniqueName": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.DAL\\RPA.DAL.csproj",
         "projectName": "RPA.DAL",
-        "projectPath": "D:\\RPA\\RPA.DAL\\RPA.DAL.csproj",
+        "projectPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.DAL\\RPA.DAL.csproj",
         "packagesPath": "C:\\Users\\Yunus\\.nuget\\packages\\",
-        "outputPath": "D:\\RPA\\RPA.DAL\\obj\\",
+        "outputPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -87,14 +87,14 @@
         }
       }
     },
-    "D:\\RPA\\RPA.GRASP\\RPA.GRASP.csproj": {
+    "D:\\GitHub\\Academic_RPA\\RPA\\RPA.GRASP\\RPA.GRASP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\RPA\\RPA.GRASP\\RPA.GRASP.csproj",
+        "projectUniqueName": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.GRASP\\RPA.GRASP.csproj",
         "projectName": "RPA.GRASP",
-        "projectPath": "D:\\RPA\\RPA.GRASP\\RPA.GRASP.csproj",
+        "projectPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.GRASP\\RPA.GRASP.csproj",
         "packagesPath": "C:\\Users\\Yunus\\.nuget\\packages\\",
-        "outputPath": "D:\\RPA\\RPA.GRASP\\obj\\",
+        "outputPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.GRASP\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -116,8 +116,8 @@
             "framework": "net8.0",
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\RPA\\RPA.DAL\\RPA.DAL.csproj": {
-                "projectPath": "D:\\RPA\\RPA.DAL\\RPA.DAL.csproj"
+              "D:\\GitHub\\Academic_RPA\\RPA\\RPA.DAL\\RPA.DAL.csproj": {
+                "projectPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.DAL\\RPA.DAL.csproj"
               }
             }
           }
@@ -158,14 +158,14 @@
         }
       }
     },
-    "D:\\RPA\\RPA.LNS\\RPA.LNS.csproj": {
+    "D:\\GitHub\\Academic_RPA\\RPA\\RPA.LNS\\RPA.LNS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\RPA\\RPA.LNS\\RPA.LNS.csproj",
+        "projectUniqueName": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.LNS\\RPA.LNS.csproj",
         "projectName": "RPA.LNS",
-        "projectPath": "D:\\RPA\\RPA.LNS\\RPA.LNS.csproj",
+        "projectPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.LNS\\RPA.LNS.csproj",
         "packagesPath": "C:\\Users\\Yunus\\.nuget\\packages\\",
-        "outputPath": "D:\\RPA\\RPA.LNS\\obj\\",
+        "outputPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.LNS\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -187,8 +187,8 @@
             "framework": "net8.0",
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\RPA\\RPA.DAL\\RPA.DAL.csproj": {
-                "projectPath": "D:\\RPA\\RPA.DAL\\RPA.DAL.csproj"
+              "D:\\GitHub\\Academic_RPA\\RPA\\RPA.DAL\\RPA.DAL.csproj": {
+                "projectPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.DAL\\RPA.DAL.csproj"
               }
             }
           }
@@ -235,14 +235,14 @@
         }
       }
     },
-    "D:\\RPA\\RPA.LNS_MD\\RPA.LNS_MD.csproj": {
+    "D:\\GitHub\\Academic_RPA\\RPA\\RPA.LNS_MD\\RPA.LNS_MD.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\RPA\\RPA.LNS_MD\\RPA.LNS_MD.csproj",
+        "projectUniqueName": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.LNS_MD\\RPA.LNS_MD.csproj",
         "projectName": "RPA.LNS_MD",
-        "projectPath": "D:\\RPA\\RPA.LNS_MD\\RPA.LNS_MD.csproj",
+        "projectPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.LNS_MD\\RPA.LNS_MD.csproj",
         "packagesPath": "C:\\Users\\Yunus\\.nuget\\packages\\",
-        "outputPath": "D:\\RPA\\RPA.LNS_MD\\obj\\",
+        "outputPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.LNS_MD\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -264,8 +264,8 @@
             "framework": "net8.0",
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\RPA\\RPA.DAL\\RPA.DAL.csproj": {
-                "projectPath": "D:\\RPA\\RPA.DAL\\RPA.DAL.csproj"
+              "D:\\GitHub\\Academic_RPA\\RPA\\RPA.DAL\\RPA.DAL.csproj": {
+                "projectPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.DAL\\RPA.DAL.csproj"
               }
             }
           }
@@ -312,14 +312,14 @@
         }
       }
     },
-    "D:\\RPA\\RPA.MathModel\\RPA.MathModel.csproj": {
+    "D:\\GitHub\\Academic_RPA\\RPA\\RPA.MathModel\\RPA.MathModel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\RPA\\RPA.MathModel\\RPA.MathModel.csproj",
+        "projectUniqueName": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.MathModel\\RPA.MathModel.csproj",
         "projectName": "RPA.MathModel",
-        "projectPath": "D:\\RPA\\RPA.MathModel\\RPA.MathModel.csproj",
+        "projectPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.MathModel\\RPA.MathModel.csproj",
         "packagesPath": "C:\\Users\\Yunus\\.nuget\\packages\\",
-        "outputPath": "D:\\RPA\\RPA.MathModel\\obj\\",
+        "outputPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.MathModel\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -379,14 +379,14 @@
         }
       }
     },
-    "D:\\RPA\\RPA.OTC-CP\\RPA.OTC-CP.csproj": {
+    "D:\\GitHub\\Academic_RPA\\RPA\\RPA.OTC-CP\\RPA.OTC-CP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\RPA\\RPA.OTC-CP\\RPA.OTC-CP.csproj",
+        "projectUniqueName": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.OTC-CP\\RPA.OTC-CP.csproj",
         "projectName": "RPA.OTC-CP",
-        "projectPath": "D:\\RPA\\RPA.OTC-CP\\RPA.OTC-CP.csproj",
+        "projectPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.OTC-CP\\RPA.OTC-CP.csproj",
         "packagesPath": "C:\\Users\\Yunus\\.nuget\\packages\\",
-        "outputPath": "D:\\RPA\\RPA.OTC-CP\\obj\\",
+        "outputPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.OTC-CP\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -408,11 +408,11 @@
             "framework": "net8.0",
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\RPA\\RPA.DAL\\RPA.DAL.csproj": {
-                "projectPath": "D:\\RPA\\RPA.DAL\\RPA.DAL.csproj"
+              "D:\\GitHub\\Academic_RPA\\RPA\\RPA.DAL\\RPA.DAL.csproj": {
+                "projectPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.DAL\\RPA.DAL.csproj"
               },
-              "D:\\RPA\\RPA.LNS_MD\\RPA.LNS_MD.csproj": {
-                "projectPath": "D:\\RPA\\RPA.LNS_MD\\RPA.LNS_MD.csproj"
+              "D:\\GitHub\\Academic_RPA\\RPA\\RPA.LNS_MD\\RPA.LNS_MD.csproj": {
+                "projectPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.LNS_MD\\RPA.LNS_MD.csproj"
               }
             }
           }
@@ -453,14 +453,14 @@
         }
       }
     },
-    "D:\\RPA\\RPA.PL\\RPA.PL.csproj": {
+    "D:\\GitHub\\Academic_RPA\\RPA\\RPA.PL\\RPA.PL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\RPA\\RPA.PL\\RPA.PL.csproj",
+        "projectUniqueName": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.PL\\RPA.PL.csproj",
         "projectName": "RPA.PL",
-        "projectPath": "D:\\RPA\\RPA.PL\\RPA.PL.csproj",
+        "projectPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.PL\\RPA.PL.csproj",
         "packagesPath": "C:\\Users\\Yunus\\.nuget\\packages\\",
-        "outputPath": "D:\\RPA\\RPA.PL\\obj\\",
+        "outputPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.PL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -482,26 +482,26 @@
             "framework": "net8.0",
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\RPA\\RPA.DAL\\RPA.DAL.csproj": {
-                "projectPath": "D:\\RPA\\RPA.DAL\\RPA.DAL.csproj"
+              "D:\\GitHub\\Academic_RPA\\RPA\\RPA.DAL\\RPA.DAL.csproj": {
+                "projectPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.DAL\\RPA.DAL.csproj"
               },
-              "D:\\RPA\\RPA.GRASP\\RPA.GRASP.csproj": {
-                "projectPath": "D:\\RPA\\RPA.GRASP\\RPA.GRASP.csproj"
+              "D:\\GitHub\\Academic_RPA\\RPA\\RPA.GRASP\\RPA.GRASP.csproj": {
+                "projectPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.GRASP\\RPA.GRASP.csproj"
               },
-              "D:\\RPA\\RPA.LNS\\RPA.LNS.csproj": {
-                "projectPath": "D:\\RPA\\RPA.LNS\\RPA.LNS.csproj"
+              "D:\\GitHub\\Academic_RPA\\RPA\\RPA.LNS\\RPA.LNS.csproj": {
+                "projectPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.LNS\\RPA.LNS.csproj"
               },
-              "D:\\RPA\\RPA.LNS_MD\\RPA.LNS_MD.csproj": {
-                "projectPath": "D:\\RPA\\RPA.LNS_MD\\RPA.LNS_MD.csproj"
+              "D:\\GitHub\\Academic_RPA\\RPA\\RPA.LNS_MD\\RPA.LNS_MD.csproj": {
+                "projectPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.LNS_MD\\RPA.LNS_MD.csproj"
               },
-              "D:\\RPA\\RPA.MathModel\\RPA.MathModel.csproj": {
-                "projectPath": "D:\\RPA\\RPA.MathModel\\RPA.MathModel.csproj"
+              "D:\\GitHub\\Academic_RPA\\RPA\\RPA.MathModel\\RPA.MathModel.csproj": {
+                "projectPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.MathModel\\RPA.MathModel.csproj"
               },
-              "D:\\RPA\\RPA.OTC-CP\\RPA.OTC-CP.csproj": {
-                "projectPath": "D:\\RPA\\RPA.OTC-CP\\RPA.OTC-CP.csproj"
+              "D:\\GitHub\\Academic_RPA\\RPA\\RPA.OTC-CP\\RPA.OTC-CP.csproj": {
+                "projectPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.OTC-CP\\RPA.OTC-CP.csproj"
               },
-              "D:\\RPA\\RPA.TestProblemGenerator\\RPA.TestProblemGenerator.csproj": {
-                "projectPath": "D:\\RPA\\RPA.TestProblemGenerator\\RPA.TestProblemGenerator.csproj"
+              "D:\\GitHub\\Academic_RPA\\RPA\\RPA.TestProblemGenerator\\RPA.TestProblemGenerator.csproj": {
+                "projectPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.TestProblemGenerator\\RPA.TestProblemGenerator.csproj"
               }
             }
           }
@@ -558,14 +558,14 @@
         }
       }
     },
-    "D:\\RPA\\RPA.TestProblemGenerator\\RPA.TestProblemGenerator.csproj": {
+    "D:\\GitHub\\Academic_RPA\\RPA\\RPA.TestProblemGenerator\\RPA.TestProblemGenerator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\RPA\\RPA.TestProblemGenerator\\RPA.TestProblemGenerator.csproj",
+        "projectUniqueName": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.TestProblemGenerator\\RPA.TestProblemGenerator.csproj",
         "projectName": "RPA.TestProblemGenerator",
-        "projectPath": "D:\\RPA\\RPA.TestProblemGenerator\\RPA.TestProblemGenerator.csproj",
+        "projectPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.TestProblemGenerator\\RPA.TestProblemGenerator.csproj",
         "packagesPath": "C:\\Users\\Yunus\\.nuget\\packages\\",
-        "outputPath": "D:\\RPA\\RPA.TestProblemGenerator\\obj\\",
+        "outputPath": "D:\\GitHub\\Academic_RPA\\RPA\\RPA.TestProblemGenerator\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
